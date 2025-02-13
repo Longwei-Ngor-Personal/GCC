@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function Contact() {
+function Footer() {
   return (
     <div className="text-white w-full h-full mt-24 pt-20 bg-primary">
       <div className="px-16">
@@ -19,23 +19,26 @@ function Contact() {
               <p>example@gmail.com</p>
             </div>
           </div>
-          <div className="text-right flex flex-col space-y-3">
-            <Link href="/contact">
+          <div className="text-right flex flex-col space-y-2">
+            <Link href="/about" className="hover:underline">
+              <p className="text-xl font-semibold cursor-pointer">About Us</p>
+            </Link>
+            <Link href="/contact" className="hover:underline">
               <p className="text-xl font-semibold cursor-pointer">
                 Group Business
               </p>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" className="hover:underline">
               <p className="text-xl font-semibold cursor-pointer">
                 Oversea Brand
               </p>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" className="hover:underline">
               <p className="text-xl font-semibold cursor-pointer">
                 Information
               </p>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" className="hover:underline">
               <p className="text-xl font-semibold cursor-pointer">Contact Us</p>
             </Link>
           </div>
@@ -49,4 +52,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Footer;

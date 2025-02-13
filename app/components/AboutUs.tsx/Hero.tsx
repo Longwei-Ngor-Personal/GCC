@@ -18,15 +18,16 @@ function Hero() {
         <div className="w-full h-[80%] flex items-center ">
           <div>
             <h1 className="text-2xl md:text-5xl lg:text-7xl 2xl:text-8xl font-semibold">
-              Discover GC City by NADI
+              About Us
             </h1>
             <h1 className="text-2xl md:text-5xl lg:text-7xl font-normal italic">
-              A Rare Gem in Phom Penh
+              Golden Cambodia Century
             </h1>
             <p className="text-sm md:text-base lg:text-xl italic w-[600px] lg:w-[900px]">
-              A prestigious 34-hectare community in Chroy Changvar, blending
-              modern elegance with lush greenery and flowing waterways.
-              Experience iconic living in the heart of Phnom Penh.
+              GCC has established a variety of businesses across the
+              South-Eastern area. We are an integrated enterprise originated
+              from Hong Kong China, establish our foundation in Cambodia, and
+              now facing ASEAN market.
             </p>
           </div>
         </div>
