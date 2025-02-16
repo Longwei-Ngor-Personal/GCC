@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 const InformationLink = () => {
   const [open, setOpen] = useState(false);
@@ -37,23 +36,6 @@ const InformationLink = () => {
           </motion.div>
         )}
       </AnimatePresence> */}
-    </div>
-  );
-};
-
-const AboutUsContent = () => {
-  return (
-    <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
-      <div className="grid grid-cols-2 lg:grid-cols-1">
-        <div className="space-y-3">
-          <a href="/about" className="block hover:underline">
-            About GC City
-          </a>
-          <a href="/board" className="block hover:underline">
-            Chairman Message & Board of Directors
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
