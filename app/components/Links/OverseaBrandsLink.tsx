@@ -13,7 +13,7 @@ const OverseaBrandsLink = () => {
       className="relative h-fit w-fit"
     >
       <a href="#" className="relative font-bold">
-        Oversea Brands
+        Oversea Branches
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",
@@ -46,10 +46,10 @@ const AboutUsContent = () => {
     <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="space-y-3">
-          <a href="/about" className="block hover:underline">
+          <a href="/about" className="block text-sm hover:underline">
             GCC Hong Kong
           </a>
-          <a href="/board" className="block hover:underline">
+          <a href="/board" className="block text-sm hover:underline">
             GCC Japan
           </a>
         </div>

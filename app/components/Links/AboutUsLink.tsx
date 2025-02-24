@@ -10,7 +10,7 @@ const AboutUsLink = () => {
     <div
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
-      className="relative h-fit w-fit"
+      className="relative h-fit w-fit z-50"
     >
       <a href="#" className="relative font-bold">
         About Us
@@ -46,10 +46,10 @@ const AboutUsContent = () => {
     <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="space-y-3">
-          <a href="/about" className="block hover:underline">
+          <a href="/about" className="block text-sm hover:underline">
             About GC City
           </a>
-          <a href="/board" className="block hover:underline">
+          <a href="/board" className="block text-sm hover:underline">
             Chairman Message & Board of Directors
           </a>
         </div>

@@ -10,7 +10,7 @@ const GroupBusinessLink = () => {
     <div
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
-      className="relative h-fit w-fit"
+      className="relative h-fit w-fit z-50"
     >
       <a href="#" className="relative font-bold">
         Group Businesses
@@ -29,7 +29,7 @@ const GroupBusinessLink = () => {
             exit={{ opacity: 0, y: 15 }}
             style={{ translateX: "-50%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="absolute left-1/2 top-12 bg-primary text-black"
+            className="absolute left-1/2 top-12  text-black"
           >
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
             <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-primary" />
@@ -43,14 +43,69 @@ const GroupBusinessLink = () => {
 
 const AboutUsContent = () => {
   return (
-    <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
-      <div className="grid grid-cols-2 lg:grid-cols-1">
+    <div className="grid w-full grid-cols-12 shadow-xl lg:w-[1000px]">
+      <div className="col-span-12 grid grid-cols-4 gap-3 bg-primary p-6 text-white">
         <div className="space-y-3">
-          <a href="/about" className="block hover:underline">
-            About GC City
+          <h3 className="font-semibold">Real Estate Development</h3>
+          <a href="#" className="block text-sm hover:underline">
+            NADI by GC CITY
           </a>
-          <a href="/board" className="block hover:underline">
-            Chairman Message & Board of Directors
+          <a href="#" className="block text-sm hover:underline">
+            GC Orussey Market
+          </a>
+          <a href="#" className="block text-sm hover:underline">
+            SOHO Mall
+          </a>
+        </div>
+        <div className="space-y-3">
+          <h3 className="font-semibold">Property Management</h3>
+          <a href="#" className="block text-sm hover:underline">
+            GC Empire
+          </a>
+          <a href="#" className="block text-sm hover:underline">
+            GC Realty
+          </a>
+        </div>
+        <div className="space-y-3">
+          <h3 className="font-semibold">Financial Investment</h3>
+          <a href="#" className="block text-sm hover:underline">
+            GC Trust
+          </a>
+          <a href="#" className="block text-sm hover:underline">
+            GC Fund
+          </a>
+        </div>
+        <div className="space-y-3">
+          <h3 className="font-semibold">Architectural Design</h3>
+          <a href="#" className="block text-sm hover:underline">
+            GC Design
+          </a>
+        </div>
+        <div className="space-y-3 mt-10">
+          <h3 className="font-semibold">Cultural Communication</h3>
+          <a href="#" className="block text-sm hover:underline">
+            GC Media
+          </a>
+        </div>
+        <div className="space-y-3 mt-10">
+          <h3 className="font-semibold">Catering & Entertainment</h3>
+          <a href="#" className="block text-sm hover:underline">
+            Hong Kong Resturant
+          </a>
+          <a href="#" className="block text-sm hover:underline">
+            Luk Hot Pot
+          </a>
+          <a href="#" className="block text-sm hover:underline">
+            Singapore Bak Kut Teh
+          </a>
+          <a href="#" className="block text-sm hover:underline">
+            GC Super
+          </a>
+        </div>
+        <div className="space-y-3 mt-10">
+          <h3 className="font-semibold">Charity & Public Welfare</h3>
+          <a href="#" className="block text-sm hover:underline">
+            GC Care
           </a>
         </div>
       </div>

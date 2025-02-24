@@ -1,18 +1,16 @@
 import Hero from "./components/Home/Hero";
-import Location from "./components/Home/Location";
 import Aboutus from "./components/Home/Aboutus";
-import Residential from "./components/Home/Residential";
-import Facilities from "./components/Home/Facilities";
 import Contact from "./components/Footer";
+import GroupBusiness from "./components/Home/GroupBusiness";
+import Introduction from "./components/Home/Introduction";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <Location />
+      <Introduction />
+      <GroupBusiness />
       <Aboutus />
-      <Residential />
-      <Facilities />
       <Contact />
     </div>
   );
