@@ -13,7 +13,7 @@ export default function Hero() {
           alt="GC CITY NADI Landscape"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
+        <div className="absolute inset-0 bg-black bg-opacity-60" />
       </div>
       <div className="absolute inset-0 w-full h-full px-4 md:px-16 z-10 text-primary">
         <Header />
@@ -29,14 +29,8 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
-            href="/explore"
+            href="#"
             className="inline-flex h-12 items-center justify-center text-gray-50 rounded-md bg-primary px-6 font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-          >
-            Explore NADI
-          </Link>
-          <Link
-            href="/contact"
-            className="inline-flex h-12 items-center justify-center rounded-md border border-primary px-6 font-medium text-primary shadow transition-colors hover:bg-primary/80 hover:text-gray-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           >
             Contact Us
           </Link>

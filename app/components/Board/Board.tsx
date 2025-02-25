@@ -2,12 +2,14 @@ import React from "react";
 
 function Board() {
   return (
-    <div className="text-primary px-16 pt-32">
+    <div className="px-16 pt-32">
       <div className="w-full flex flex-col items-center justify-center">
-        <h3 className="text-3xl lg:text-4xl">Board of Directors</h3>
+        <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
+          Board of Directors
+        </h3>
       </div>
       <div>
-        <div className="grid grid-cols-12 gap-2 mt-10 ">
+        <div className="grid grid-cols-12 gap-2 mt-10 text-gray-600 mb-20">
           <div className="col-span-2">
             <h2 className="text-lg font-semibold"> Yu Ka Ki </h2>
             <h2 className="font-semibold"> GCC Chairman </h2>

@@ -2,10 +2,12 @@ import React from "react";
 
 function Information() {
   return (
-    <div className="text-primary px-16 pt-20">
+    <div className="px-16 pt-20">
       <div className="w-full flex flex-col items-center justify-center">
-        <h3 className="text-3xl lg:text-4xl">More Information</h3>
-        <p className="text-sm lg:text-lg mt-2 text-center w-[800px]">
+        <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
+          More Information
+        </h3>
+        <p className="text-sm lg:text-lg mt-2 text-center w-[800px] text-gray-600">
           We have extensive experience in the field of finance, property and
           information technology. We bring elite industry technique to this full
           of life country- Cambodia. We make our financial and property
@@ -17,7 +19,7 @@ function Information() {
           international metropolis.{" "}
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-2 gap-2 text-primary">
         <div className="col-span-1 relative w-full h-[200px] lg:h-[300px] mt-20 bg-[#192A4B]">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-65 -z-10"></div>
           <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
@@ -45,12 +47,12 @@ function Information() {
           </p>
         </div>
       </div>
-      <div className="relative w-full h-[200px] lg:h-[300px] mt-2 bg-[#192A4B]">
+      <div className="relative w-full h-[200px] lg:h-[300px] mt-2 bg-[#192A4B] text-primary text-center">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-65 -z-10"></div>
-        <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
+        <h2 className="absolute top-5 w-full h-full text-lg lg:text-2xl font-semibold">
           More about Cambodia
         </h2>
-        <p className="absolute top-16 left-5 w-[80%] h-full text-sm lg:text-lg font-medium">
+        <p className="absolute top-16 w-full h-full text-sm lg:text-lg font-medium px-20">
           Cambodia, officially the Kingdom of Cambodia, is located in the
           southern portion of the Indochina peninsula in Southeast Asia,
           bordered by Thailand to the northwest, Laos to the northeast, Vietnam
