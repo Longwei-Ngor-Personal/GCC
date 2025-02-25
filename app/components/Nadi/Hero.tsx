@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 -z-20">
         <Image
           src="/hero.png"
           width={1920}
@@ -15,10 +15,10 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-60" />
       </div>
-      <div className="absolute inset-0 w-full h-full px-4 md:px-16 z-10 text-primary">
+      <div className="absolute inset-0 w-full h-full px-4 md:px-16 z-0 text-primary">
         <Header />
       </div>
-      <div className="relative z-10 container mx-auto px-4 text-center text-primary">
+      <div className="relative -z-10 container mx-auto px-4 text-center text-primary">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
           GC CITY NADI: Where Rivers and Luxury Converge
         </h1>
