@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 function Information() {
@@ -19,14 +18,7 @@ function Information() {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-2">
-        <div className="col-span-1 relative w-full h-[200px] lg:h-[300px] mt-20">
-          <Image
-            src="/about/vision.png"
-            alt="Hero"
-            layout="fill"
-            objectFit="cover"
-            className="absolute top-0 left-0 -z-10 "
-          />
+        <div className="col-span-1 relative w-full h-[200px] lg:h-[300px] mt-20 bg-[#192A4B]">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-65 -z-10"></div>
           <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
             Corporate Vision
@@ -39,14 +31,7 @@ function Information() {
             pay back to the community with our kindness.
           </p>
         </div>
-        <div className="col-span-1 relative w-full h-[200px] lg:h-[300px] mt-20">
-          <Image
-            src="/about/mission.png"
-            alt="Hero"
-            layout="fill"
-            objectFit="cover"
-            className="absolute top-0 left-0 -z-10 "
-          />
+        <div className="col-span-1 relative w-full h-[200px] lg:h-[300px] mt-20 bg-[#192A4B]">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-65 -z-10"></div>
           <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
             Corporate Mission
@@ -60,14 +45,7 @@ function Information() {
           </p>
         </div>
       </div>
-      <div className="relative w-full h-[200px] lg:h-[300px] mt-2">
-        <Image
-          src="/about/combodia.png"
-          alt="Hero"
-          layout="fill"
-          objectFit="cover"
-          className="absolute top-0 left-0 -z-10 "
-        />
+      <div className="relative w-full h-[200px] lg:h-[300px] mt-2 bg-[#192A4B]">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-65 -z-10"></div>
         <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
           More about Cambodia

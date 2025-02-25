@@ -6,13 +6,13 @@ function Hero() {
   return (
     <div className="relative w-full h-[760px] text-primary">
       <Image
-        src="/hero.png"
+        src="/gccity.webp"
         alt="Hero"
         layout="fill"
         objectFit="cover"
-        className="absolute top-0 left-0 -z-10 opacity-90 blur-[2px]"
+        className="absolute top-0 left-0 -z-10 opacity-90 blur-[1px]"
       />
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 -z-10"></div>
       <div className="w-full h-full px-4 md:px-16 z-10">
         <Header />
         <div className="w-full h-[80%] flex items-center ">

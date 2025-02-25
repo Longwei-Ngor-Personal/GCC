@@ -18,7 +18,7 @@ function GroupBusiness() {
         </div>
         <div className="mt-8 lg:mt-14">
           <div className="">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8 w-full mx-auto">
               <Card
                 heading="Cambodia My 2nd Home"
                 description="CM2H offers a 10-year Golden Visa with no entry restrictions and a pathway to Cambodian citizenship after five years. It is the only government-approved program for obtaining a Cambodian passport."
@@ -29,7 +29,7 @@ function GroupBusiness() {
                 heading="NADI by GC CITY"
                 description="GC CITY NADI is located in the Chroy Changvar of Cambodian capital Phnom Penh, space project 34 hectares (3 Phases in total)."
                 imgSrc="/hero.png"
-                link="https://gcc-gp.com/en/gc-city/nadi/"
+                link="/nadi"
               />
               <Card
                 heading="GC Orussey"
@@ -42,6 +42,18 @@ function GroupBusiness() {
                 description="GC media is an advertising media company focusing on high-end media operation strongly built by GCC, having rich media resources and core advantages businesses, including brand image promotion, advertising production and promotion, event banquet, etc."
                 imgSrc="/gcmedia.png"
                 link="https://gcc-gp.com/en/gc-media/"
+              />
+              <Card
+                heading="GC Fund"
+                description="GC media is an advertising media company focusing on high-end media operation strongly built by GCC, having rich media resources and core advantages businesses, including brand image promotion, advertising production and promotion, event banquet, etc."
+                imgSrc="/gcfund.webp"
+                link="https://gcc-gp.com/en/gc-fund/"
+              />
+              <Card
+                heading="GC Trust"
+                description="GC media is an advertising media company focusing on high-end media operation strongly built by GCC, having rich media resources and core advantages businesses, including brand image promotion, advertising production and promotion, event banquet, etc."
+                imgSrc="/gctrust.webp"
+                link="https://gcc-gp.com/en/gc-trust/"
               />
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/AboutUs.tsx/Hero";
-import Information from "../components/AboutUs.tsx/Information";
+import Hero from "../components/AboutUs/Hero";
+import Information from "../components/AboutUs/Information";
 import Footer from "../components/Footer";
 
 function AboutPage() {
