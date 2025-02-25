@@ -44,7 +44,7 @@ const GroupBusinessLink = () => {
 const AboutUsContent = () => {
   return (
     <div className="grid w-full grid-cols-12 shadow-xl lg:w-[1000px]">
-      <div className="col-span-12 grid grid-cols-3 gap-3 bg-primary p-6 text-white">
+      <div className="col-span-12 grid grid-cols-4 gap-3 bg-primary p-6 text-white">
         <div className="space-y-3">
           <h3 className="font-semibold">Real Estate Development</h3>
           <a href="/nadi" className="block text-sm hover:underline">
@@ -67,6 +67,12 @@ const AboutUsContent = () => {
           </a>
         </div>
         <div className="space-y-3">
+          <h3 className="font-semibold">Property Management</h3>
+          <a href="#" className="block text-sm hover:underline">
+            GC City
+          </a>
+        </div>
+        <div className="space-y-3">
           <h3 className="font-semibold">Catering & Entertainment</h3>
           <a href="#" className="block text-sm hover:underline">
             Hong Kong Resturant
@@ -81,19 +87,20 @@ const AboutUsContent = () => {
             GC Super
           </a>
         </div>
-        <div className="space-y-3 mt-5">
+
+        <div className="space-y-3">
           <h3 className="font-semibold">Architectural Design</h3>
           <a href="#" className="block text-sm hover:underline">
             GC Design
           </a>
         </div>
-        <div className="space-y-3 mt-5">
+        <div className="space-y-3">
           <h3 className="font-semibold">Cultural Communication</h3>
           <a href="#" className="block text-sm hover:underline">
             GC Media
           </a>
         </div>
-        <div className="space-y-3 mt-5">
+        <div className="space-y-3">
           <h3 className="font-semibold">Charity & Public Welfare</h3>
           <a href="#" className="block text-sm hover:underline">
             GC Care

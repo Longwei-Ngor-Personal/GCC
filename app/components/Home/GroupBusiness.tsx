@@ -34,7 +34,7 @@ function GroupBusiness() {
               <Card
                 heading="GC Orussey"
                 description="GC Orussey Market is elaborately built by GCC group, integrating Khmer architectural wisdom and modern real estate development."
-                imgSrc="gc_orussey.jpg"
+                imgSrc="gcorussey.jpg"
                 link="https://gcc-gp.com/en/gc-orussey-market/"
               />
               <Card
