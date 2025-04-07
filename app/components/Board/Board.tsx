@@ -2,7 +2,7 @@ import React from "react";
 
 function Board() {
   return (
-    <div className="px-16 pt-32">
+    <div className="px-16 pt-20 pb-10">
       <div className="w-full flex flex-col items-center justify-center">
         <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
           Board of Directors

@@ -9,13 +9,15 @@ const images = [
   "/gccity.webp",
   "/gcfund.webp",
   "/gctrust.webp",
-  "/gcland.webp", // Add more image paths as needed
+  "/gcdesign.avif", // Add more image paths as needed
+  "/gcland.webp",
 ];
 
 const logos = [
   "/gclogo.webp",
   "/fundlogo.png",
   "/trustlogo.png",
+  "/designlogo.png",
   "/landlogo.png", // Add more logo paths as needed
 ];
 
@@ -68,7 +70,7 @@ function Hero() {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 -z-20" />
 
       {/* Content */}
-      <div className="w-full h-full px-4 md:px-16 ">
+      <div className="w-full h-full ">
         <Header />
         <div className="w-full h-[80%] flex items-center justify-center -z-10">
           <motion.div

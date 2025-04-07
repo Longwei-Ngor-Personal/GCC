@@ -8,7 +8,6 @@ function BoardPage() {
   return (
     <div>
       <Hero />
-      <Message />
       <Board />
       <Footer />
     </div>

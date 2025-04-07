@@ -46,11 +46,14 @@ const AboutUsContent = () => {
     <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="space-y-3">
-          <a href="/about" className="block text-sm hover:underline">
+          <a href="/" className="block text-sm hover:underline">
             GCC Hong Kong
           </a>
-          <a href="/board" className="block text-sm hover:underline">
+          <a href="/" className="block text-sm hover:underline">
             GCC Japan
+          </a>
+          <a href="/" className="block text-sm hover:underline">
+            GCC China
           </a>
         </div>
       </div>

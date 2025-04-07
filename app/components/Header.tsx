@@ -1,26 +1,40 @@
-import { Menu } from "lucide-react";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useState, useEffect } from "react";
 import AboutUsLink from "./Links/AboutUsLink";
 import GroupBusinessLink from "./Links/GroupBusinessLink";
 import OverseaBrandsLink from "./Links/OverseaBrandsLink";
 import InformationLink from "./Links/InformationLink";
 import { FiArrowRight } from "react-icons/fi";
+import { MobileNav } from "./MobileNav";
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="flex justify-between items-center py-4">
+    <nav
+      className={`fixed w-full flex justify-between items-center z-50 py-4 px-4 md:px-16 transition-all duration-300 ${
+        isScrolled ? "bg-white/80 backdrop-blur-md" : ""
+      }`}
+    >
       <Link href="/" className="hidden lg:block">
         <Image src="/logo.png" alt="Logo" width={250} height={100} />
       </Link>
       <Link href="/" className="lg:hidden">
         <Image src="/logo.png" alt="Logo" width={200} height={100} />
       </Link>
-      <div className="lg:hidden">
-        <button>
-          <Menu size={32} color="#D6B072" />
-        </button>
+      <div className="absolute top-0 right-0 lg:hidden">
+        <MobileNav />
       </div>
       <div className="hidden lg:flex items-center space-x-8 font-medium">
         <AboutUsLink />

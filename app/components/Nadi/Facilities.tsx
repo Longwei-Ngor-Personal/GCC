@@ -7,81 +7,6 @@ import { useRef } from "react";
 function Facilities() {
   return (
     <div className="text-primary pt-20">
-      {/* <div className="flex flex-col items-center justify-center">
-        <h1 className="text-3xl lg:text-4xl text-center">Facilities</h1>
-        <p className="text-sm lg:text-lg text-center w-[600px]">
-          NADI offers a high-class clubhouse with a swimming pool, gym, café,
-          children’s playroom, and multifunctional spaces for leisure and social
-          gatherings.
-        </p>
-      </div>
-      <div className="mt-8 space-y-2">
-        <div className="relative w-full h-[200px] lg:h-[300px]">
-          <Image
-            src="/clubhouse.png"
-            alt="Hero"
-            layout="fill"
-            className="absolute top-0 left-0 -z-10 "
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
-          <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
-            {" "}
-            High-End Clubhouse
-          </h2>
-        </div>
-        <div className="relative w-full h-[200px] lg:h-[300px]">
-          <Image
-            src="/venue.png"
-            alt="Hero"
-            layout="fill"
-            className="absolute top-0 left-0 -z-10 "
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
-          <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
-            {" "}
-            Festival Venue
-          </h2>
-        </div>
-        <div className="relative w-full h-[200px] lg:h-[300px]">
-          <Image
-            src="/playground.png"
-            alt="Hero"
-            layout="fill"
-            className="absolute top-0 left-0 -z-10 "
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
-          <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
-            {" "}
-            Playground
-          </h2>
-        </div>
-        <div className="relative w-full h-[200px] lg:h-[300px]">
-          <Image
-            src="/gym.png"
-            alt="Hero"
-            layout="fill"
-            className="absolute top-0 left-0 -z-10 "
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
-          <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
-            {" "}
-            Gym
-          </h2>
-        </div>
-        <div className="relative w-full h-[200px] lg:h-[300px]">
-          <Image
-            src="/pool.png"
-            alt="Hero"
-            layout="fill"
-            className="absolute top-0 left-0 -z-10 "
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
-          <h2 className="absolute top-5 left-5 w-full h-full text-lg lg:text-2xl font-semibold">
-            {" "}
-            Swimming Pool
-          </h2>
-        </div>
-      </div> */}
       <Example />
     </div>
   );
@@ -104,7 +29,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-65%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-[#192A4B]">
+    <section ref={targetRef} className="relative h-[300vh] bg-[#355469]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
@@ -147,27 +72,27 @@ type CardType = {
 
 const cards: CardType[] = [
   {
-    url: "/nadicard.jpg",
+    url: "/nadi/nadicard.jpg",
     title: "Our Main Facilities",
     id: 7,
   },
   {
-    url: "/park.jpg",
+    url: "/nadi/park.jpg",
     title: "Park",
     id: 1,
   },
   {
-    url: "/playground.jpg",
+    url: "/nadi/playground.jpg",
     title: "Playground",
     id: 2,
   },
   {
-    url: "/venue.jpg",
+    url: "/nadi/venue.jpg",
     title: "Venue",
     id: 3,
   },
   {
-    url: "/pool.jpg",
+    url: "/nadi/pool.jpg",
     title: "Pool",
     id: 4,
   },

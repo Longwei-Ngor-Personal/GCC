@@ -22,7 +22,7 @@ function GroupBusiness() {
               <Card
                 heading="Cambodia My 2nd Home"
                 description="CM2H offers a 10-year Golden Visa with no entry restrictions and a pathway to Cambodian citizenship after five years. It is the only government-approved program for obtaining a Cambodian passport."
-                imgSrc="/cm2h.jpg"
+                imgSrc="/home/cm2h.jpg"
                 link="https://cm2h.com/"
               />
               <Card
@@ -34,25 +34,25 @@ function GroupBusiness() {
               <Card
                 heading="GC Orussey"
                 description="GC Orussey Market is elaborately built by GCC group, integrating Khmer architectural wisdom and modern real estate development."
-                imgSrc="gcorussey.jpg"
+                imgSrc="/home/gcorussey.jpg"
                 link="https://gcc-gp.com/en/gc-orussey-market/"
               />
               <Card
                 heading="GC Media"
                 description="GC media is an advertising media company focusing on high-end media operation strongly built by GCC, having rich media resources and core advantages businesses, including brand image promotion, advertising production and promotion, event banquet, etc."
-                imgSrc="/gcmedia.png"
+                imgSrc="/home/gcmedia.png"
                 link="https://gcc-gp.com/en/gc-media/"
               />
               <Card
                 heading="GC Fund"
                 description="GC media is an advertising media company focusing on high-end media operation strongly built by GCC, having rich media resources and core advantages businesses, including brand image promotion, advertising production and promotion, event banquet, etc."
-                imgSrc="/gcfund.webp"
+                imgSrc="/home/gcfund.webp"
                 link="https://gcc-gp.com/en/gc-fund/"
               />
               <Card
                 heading="GC Trust"
                 description="GC media is an advertising media company focusing on high-end media operation strongly built by GCC, having rich media resources and core advantages businesses, including brand image promotion, advertising production and promotion, event banquet, etc."
-                imgSrc="/gctrust.webp"
+                imgSrc="/home/gctrust.webp"
                 link="https://gcc-gp.com/en/gc-trust/"
               />
             </div>
@@ -94,7 +94,7 @@ const Card = ({
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
         </div>
         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
-        <div className="p-4 relative z-20 h-full text-gray-300 group-hover:text-primary font-medium transition-colors duration-500 flex flex-col justify-between">
+        <div className="p-4 relative z-0 h-full text-gray-300 group-hover:text-primary font-medium transition-colors duration-500 flex flex-col justify-between">
           <FiArrowRight className="text-3xl group-hover:-rotate-45 transition-transform duration-500 ml-auto" />
           <div>
             <h4>

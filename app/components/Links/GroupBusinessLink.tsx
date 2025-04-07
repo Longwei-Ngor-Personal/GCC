@@ -87,10 +87,9 @@ const AboutUsContent = () => {
             GC Super
           </a>
         </div>
-
         <div className="space-y-3">
           <h3 className="font-semibold">Architectural Design</h3>
-          <a href="#" className="block text-sm hover:underline">
+          <a href="/design" className="block text-sm hover:underline">
             GC Design
           </a>
         </div>

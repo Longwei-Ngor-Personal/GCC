@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Left Section: Logo and Contact Information */}
-          <div className="mb-8 md:mb-0 space-y-4">
+          <div className="mb-8 md:mb-0 space-y-4 text-sm lg:text-base">
             <Image src="/logo.png" alt="Logo" width={200} height={100} />
             <div className="flex items-center space-x-2 pt-10">
               <MapPin className="h-5 w-5" />
@@ -25,13 +25,13 @@ export default function Footer() {
           </div>
 
           {/* Right Section: Links */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8">
             {/* About Us */}
             <div>
-              <h3 className="font-semibold text-lg mb-4 text-gray-900">
+              <h3 className="font-semibold lg:text-lg mb-4 text-gray-900">
                 About Us
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm lg:text-base">
                 <li>
                   <Link href="/about" className="hover:underline">
                     About GC City
@@ -47,10 +47,10 @@ export default function Footer() {
 
             {/* Groups */}
             <div>
-              <h3 className="font-semibold text-lg mb-4 text-gray-900">
+              <h3 className="font-semibold lg:text-lg mb-4 text-gray-900">
                 Groups Business
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm lg:text-base">
                 <li>
                   <Link href="/groups/tech" className="hover:underline">
                     Cambodia My 2nd Home
@@ -76,10 +76,10 @@ export default function Footer() {
 
             {/* Brands & Information */}
             <div>
-              <h3 className="font-semibold text-lg mb-4 text-gray-900">
+              <h3 className="font-semibold lg:text-lg mb-4 text-gray-900">
                 Oversea Branches
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm lg:text-base">
                 <li>
                   <Link href="/brands" className="hover:underline">
                     GC Hong Kong
@@ -95,7 +95,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-muted-foreground/20 text-center">
+        <div className="mt-8 pt-8 border-t border-muted-foreground/20 text-center text-sm lg:text-base">
           <p>
             &copy; {new Date().getFullYear()} Your Company Name. All rights
             reserved.

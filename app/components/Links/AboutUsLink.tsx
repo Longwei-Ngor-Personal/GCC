@@ -50,7 +50,7 @@ const AboutUsContent = () => {
             About GC City
           </a>
           <a href="/board" className="block text-sm hover:underline">
-            Chairman Message & Board of Directors
+            Board of Directors
           </a>
         </div>
       </div>

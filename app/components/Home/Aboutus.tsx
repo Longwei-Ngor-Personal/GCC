@@ -5,7 +5,9 @@ export default function AboutUs() {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat py-24 text-gray-200 my-10"
-      style={{ backgroundImage: "url('/preview.png?height=600&width=1200')" }}
+      style={{
+        backgroundImage: "url('/home/preview.png')",
+      }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       <div className="relative container mx-auto px-4">
