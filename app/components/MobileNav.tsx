@@ -133,14 +133,14 @@ const HamburgerButton = ({
         animate={active ? "open" : "closed"}
         variants={UNDERLAY_VARIANTS}
         style={{ top: 16, right: 16 }}
-        className="fixed z-10 rounded-xl bg-gradient-to-br from-[#D6B072] to-[#B08E5C] shadow-lg shadow-[#8C7246]/20"
+        className="fixed z-10 rounded-xl -mt-2 bg-gradient-to-br from-[#D6B072] to-[#B08E5C] shadow-lg shadow-[#8C7246]/20"
       />
 
       <motion.button
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`group fixed right-4 top-4 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${
+        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${
           active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
         }`}
       >
@@ -173,8 +173,8 @@ const LINKS = [
         title: "",
         href: "#about",
         links: [
-          { title: "GC City", href: "#" },
-          { title: "Board of Directors", href: "#" },
+          { title: "GC City", href: "/about" },
+          { title: "Board of Directors", href: "/board" },
         ],
       },
     ],
@@ -218,7 +218,7 @@ const LINKS = [
       {
         title: "Architectural Design",
         href: "#",
-        links: [{ title: "GC Design", href: "#" }],
+        links: [{ title: "GC Design", href: "/design" }],
       },
       {
         title: "Cultural Communication",
@@ -240,8 +240,8 @@ const LINKS = [
         title: "",
         href: "#",
         links: [
-          { title: "GC Hong Kong", href: "#" },
-          { title: "GC Japan", href: "#" },
+          { title: "GC Hong Kong", href: "/hongkong" },
+          { title: "GC Japan", href: "/japan" },
         ],
       },
     ],
