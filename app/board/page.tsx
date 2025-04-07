@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../components/Board/Hero";
-import Message from "../components/Board/Message";
 import Board from "../components/Board/Board";
 import Footer from "../components/Footer";
 

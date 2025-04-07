@@ -23,7 +23,7 @@ export default function Hero() {
           GC Design
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          We sculpture design into our clients' dreams, creating ideal
+          We sculpture design into our clients&apos; dreams, creating ideal
           environments for both commercial and residential spaces.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">

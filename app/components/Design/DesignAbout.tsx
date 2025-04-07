@@ -14,20 +14,20 @@ function AboutDesign() {
               About GC Design
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              In GC Design, we take care of our clients' demands in every way.
-              Our design concept conveys the thirst and pursue of healthy life.
-              No matter it is for commercial or residential use, we always
+              In GC Design, we take care of our clients&apos; demands in every
+              way. Our design concept conveys the thirst and pursue of healthy
+              life. No matter it is for commercial or residential use, we always
               persist to provide an ideal environment and comfort life to
               clients.
             </p>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               Through our thorough listening, we treat every client as our
-              family. We sculpture design into clients' dream. In the execution
-              stage of every project, we use our sophisticated creative
-              resource, most supreme standard professional and craftsman,
-              top-notch material and advance technique. We use supreme,
-              efficient and most importantly, humane way to finish in time and
-              in budget.
+              family. We sculpture design into clients&apos; dream. In the
+              execution stage of every project, we use our sophisticated
+              creative resource, most supreme standard professional and
+              craftsman, top-notch material and advance technique. We use
+              supreme, efficient and most importantly, humane way to finish in
+              time and in budget.
             </p>
           </div>
           <div className="flex items-center justify-center">
