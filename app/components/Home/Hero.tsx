@@ -6,19 +6,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
-  "/gccity.webp",
-  "/gcfund.webp",
-  "/gctrust.webp",
-  "/gcdesign.avif", // Add more image paths as needed
-  "/gcland.webp",
+  "/home/gccity.webp",
+  "/home/gcfund.webp",
+  "/home/gctrust.webp",
+  "/design/gcdesignbg.avif", // Add more image paths as needed
+  "/home/gcland.webp",
 ];
 
 const logos = [
-  "/gclogo.webp",
-  "/fundlogo.png",
-  "/trustlogo.png",
-  "/designlogo.png",
-  "/landlogo.png", // Add more logo paths as needed
+  "/home/gclogo.webp",
+  "/home/fundlogo.png",
+  "/home/trustlogo.png",
+  "/home/designlogo.png",
+  "/home/landlogo.png", // Add more logo paths as needed
 ];
 
 function Hero() {

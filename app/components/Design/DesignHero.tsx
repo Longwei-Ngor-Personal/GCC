@@ -7,21 +7,25 @@ export default function Hero() {
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 -z-20">
         <Image
-          src="/gcdesign.avif"
+          src="/design/gcdesignbg.avif"
           width={1920}
           height={1080}
           alt="GC CITY NADI Landscape"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        <div className="absolute inset-0 bg-black bg-opacity-40" />
       </div>
       <div className="absolute inset-0 w-full h-full text-primary">
         <Header />
       </div>
       <div className="relative -z-10 container mx-auto px-4 text-center text-primary">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-          GC Design
-        </h1>
+        <Image
+          src="/home/designlogo.png"
+          width={1920}
+          height={1080}
+          alt="GC Design Logo"
+          className="w-[500px] h-[150px] mx-auto mb-4"
+        />
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
           We sculpture design into our clients&apos; dreams, creating ideal
           environments for both commercial and residential spaces.

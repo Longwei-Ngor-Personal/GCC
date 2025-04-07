@@ -28,10 +28,10 @@ function Header() {
       }`}
     >
       <Link href="/" className="hidden lg:block">
-        <Image src="/logo.png" alt="Logo" width={250} height={100} />
+        <Image src="/home/logo.png" alt="Logo" width={250} height={100} />
       </Link>
       <Link href="/" className="lg:hidden">
-        <Image src="/logo.png" alt="Logo" width={200} height={100} />
+        <Image src="/home/logo.png" alt="Logo" width={200} height={100} />
       </Link>
       <div className="absolute top-0 right-0 lg:hidden">
         <MobileNav />
