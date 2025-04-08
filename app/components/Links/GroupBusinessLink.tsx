@@ -53,7 +53,7 @@ const AboutUsContent = () => {
           <a href="/orussey" className="block text-sm hover:underline">
             GC Orussey
           </a>
-          <a href="#" className="block text-sm hover:underline">
+          <a href="/soho" className="block text-sm hover:underline">
             SOHO Mall
           </a>
         </div>

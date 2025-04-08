@@ -22,7 +22,12 @@ function Location() {
       </div>
       <div className="grid grid-cols-12 space-x-4 mt-8 lg:mt-14">
         <div className="hidden col-span-4 lg:flex items-center justify-center">
-          <Image src="/location.png" alt="Location" width={400} height={500} />
+          <Image
+            src="/home/location.png"
+            alt="Location"
+            width={400}
+            height={500}
+          />
         </div>
         <div className="hidden lg:block col-span-12 lg:col-span-8">
           <p className="text-sm lg:text-lg">
@@ -115,7 +120,12 @@ function Location() {
           </div>
         </div>
         <div className="block lg:hidden col-span-4">
-          <Image src="/location.png" alt="Location" width={400} height={500} />
+          <Image
+            src="/home/location.png"
+            alt="Location"
+            width={400}
+            height={500}
+          />
         </div>
         <div className="block lg:hidden col-span-8">
           <div className="grid grid-cols-2 gap-6">

@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="relative w-full h-[760px] text-primary">
       <Image
-        src="/gccity.webp"
+        src="/home/gccity.webp"
         alt="Hero"
         layout="fill"
         objectFit="cover"

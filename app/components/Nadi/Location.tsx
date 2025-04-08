@@ -103,7 +103,7 @@ export default function LocationShowcase() {
         <div className="mt-8 lg:mt-0 lg:top-8">
           <div className="aspect-[3/4] relative rounded-lg overflow-hidden bg-gray-50">
             <Image
-              src="/locations.png?height=800&width=600"
+              src="/home/locations.png?height=800&width=600"
               alt="Project Locations Overview"
               fill
               className="contain"
