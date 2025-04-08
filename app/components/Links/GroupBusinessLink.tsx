@@ -42,11 +42,6 @@ const GroupBusinessLink = () => {
   );
 };
 
-interface link {
-  href: string;
-  text: string;
-}
-
 interface Link {
   href: string;
   text: string;
