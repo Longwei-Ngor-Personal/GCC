@@ -133,7 +133,12 @@ const HamburgerButton = ({
         animate={active ? "open" : "closed"}
         variants={UNDERLAY_VARIANTS}
         style={{ top: 16, right: 16 }}
-        className="fixed z-10 rounded-xl -mt-2 bg-gradient-to-br from-[#D6B072] to-[#B08E5C] shadow-lg shadow-[#8C7246]/20"
+        className={`fixed z-10 rounded-xl -mt-2  
+          ${
+            active
+              ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
+              : "bg-white/0"
+          }`}
       />
 
       <motion.button
@@ -146,17 +151,20 @@ const HamburgerButton = ({
       >
         <motion.span
           variants={HAMBURGER_VARIANTS.top}
-          className="absolute block h-[2px] w-8 bg-white"
+          className={`absolute block h-[2px] w-8 bg-primary
+            ${active ? "bg-white" : ""}`}
           style={{ y: "-50%", left: "50%", x: "-50%" }}
         />
         <motion.span
           variants={HAMBURGER_VARIANTS.middle}
-          className="absolute block h-[2px] w-8 bg-white"
+          className={`absolute block h-[2px] w-8 bg-primary
+            ${active ? "bg-white" : ""}`}
           style={{ left: "50%", x: "-50%", top: "50%", y: "-50%" }}
         />
         <motion.span
           variants={HAMBURGER_VARIANTS.bottom}
-          className="absolute block h-[2px] w-3 bg-white"
+          className={`absolute block h-[2px] w-3 bg-primary
+            ${active ? "bg-white" : ""}`}
           style={{ x: "-50%", y: "50%" }}
         />
       </motion.button>

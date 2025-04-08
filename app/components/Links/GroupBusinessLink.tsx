@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 const GroupBusinessLink = () => {
   const [open, setOpen] = useState(false);
@@ -41,69 +42,121 @@ const GroupBusinessLink = () => {
   );
 };
 
-const AboutUsContent = () => {
+interface link {
+  href: string;
+  text: string;
+}
+
+interface Link {
+  href: string;
+  text: string;
+}
+
+const CategoryDropdown = ({
+  title,
+  links,
+}: {
+  title: string;
+  links: Link[];
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="grid w-full grid-cols-12 shadow-xl lg:w-[1000px]">
-      <div className="col-span-12 grid grid-cols-4 gap-3 bg-primary p-6 text-white">
-        <div className="space-y-3">
-          <h3 className="font-semibold">Real Estate Development</h3>
-          <a href="/nadi" className="block text-sm hover:underline">
-            NADI by GC CITY
-          </a>
-          <a href="/orussey" className="block text-sm hover:underline">
-            GC Orussey
-          </a>
-          <a href="/soho" className="block text-sm hover:underline">
-            SOHO Mall
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">Financial Investment</h3>
-          <a href="#" className="block text-sm hover:underline">
-            GC Trust
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            GC Fund
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">Property Management</h3>
-          <a href="#" className="block text-sm hover:underline">
-            GC City
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">Catering & Entertainment</h3>
-          <a href="#" className="block text-sm hover:underline">
-            Hong Kong Resturant
-          </a>
-          <a href="/hotpot" className="block text-sm hover:underline">
-            Luk Hot Pot
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            Singapore Bak Kut Teh
-          </a>
-          <a href="#" className="block text-sm hover:underline">
-            GC Super
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">Architectural Design</h3>
-          <a href="/design" className="block text-sm hover:underline">
-            GC Design
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">Cultural Communication</h3>
-          <a href="#" className="block text-sm hover:underline">
-            GC Media
-          </a>
-        </div>
-        <div className="space-y-3">
-          <h3 className="font-semibold">Charity & Public Welfare</h3>
-          <a href="#" className="block text-sm hover:underline">
-            GC Care
-          </a>
+    <div className="space-y-2">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center justify-between w-full font-semibold"
+      >
+        {title}
+        <ChevronDown
+          size={16}
+          className={`transition-transform duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }}
+            className="overflow-hidden"
+          >
+            <div className="space-y-2 ml-2">
+              {links.map((link: Link, index: number) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="block text-sm hover:underline"
+                >
+                  {link.text}
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+const AboutUsContent = () => {
+  const categories = [
+    {
+      title: "Real Estate Development",
+      links: [
+        { href: "/nadi", text: "NADI by GC CITY" },
+        { href: "/orussey", text: "GC Orussey" },
+        { href: "/soho", text: "SOHO Mall" },
+      ],
+    },
+    {
+      title: "Financial Investment",
+      links: [
+        { href: "#", text: "GC Trust" },
+        { href: "#", text: "GC Fund" },
+      ],
+    },
+    {
+      title: "Property Management",
+      links: [{ href: "#", text: "GC City" }],
+    },
+    {
+      title: "Catering & Entertainment",
+      links: [
+        { href: "#", text: "Hong Kong Resturant" },
+        { href: "/hotpot", text: "Luk Hot Pot" },
+        { href: "#", text: "Singapore Bak Kut Teh" },
+        { href: "#", text: "GC Super" },
+      ],
+    },
+    {
+      title: "Architectural Design",
+      links: [{ href: "/design", text: "GC Design" }],
+    },
+    {
+      title: "Cultural Communication",
+      links: [{ href: "#", text: "GC Media" }],
+    },
+    {
+      title: "Charity & Public Welfare",
+      links: [{ href: "#", text: "GC Care" }],
+    },
+  ];
+
+  return (
+    <div className="grid w-full grid-cols-1 shadow-xl lg:w-[1000px]">
+      <div className="col-span-12 gap-4 bg-primary p-6 text-white">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {categories.map((category, index) => (
+            <CategoryDropdown
+              key={index}
+              title={category.title}
+              links={category.links}
+            />
+          ))}
         </div>
       </div>
     </div>

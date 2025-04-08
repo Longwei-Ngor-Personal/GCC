@@ -27,7 +27,7 @@ export default function Hero() {
           Penh, where contemporary design meets the serenity of flowing rivers
           and lush greenery.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="#"
             className="inline-flex h-12 items-center justify-center text-gray-50 rounded-md bg-primary px-6 font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
