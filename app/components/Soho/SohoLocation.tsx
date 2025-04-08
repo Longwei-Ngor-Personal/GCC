@@ -66,7 +66,6 @@ function SohoLocation() {
       </section>
       <section className="py-24 px-4 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-pink-600 opacity-90"></div>
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center mix-blend-overlay"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-4xl font-bold text-white mb-6">
             Experience the SOHO Lifestyle

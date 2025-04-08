@@ -77,7 +77,7 @@ const AboutUsContent = () => {
           <a href="#" className="block text-sm hover:underline">
             Hong Kong Resturant
           </a>
-          <a href="#" className="block text-sm hover:underline">
+          <a href="/hotpot" className="block text-sm hover:underline">
             Luk Hot Pot
           </a>
           <a href="#" className="block text-sm hover:underline">
