@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between">
           {/* Left Section: Logo and Contact Information */}
           <div className="mb-8 md:mb-0 space-y-4 text-sm lg:text-base">
-            <Image src="/logo.png" alt="Logo" width={200} height={100} />
+            <Image src="/home/logo.png" alt="Logo" width={200} height={100} />
             <div className="flex items-center space-x-2 pt-10">
               <MapPin className="h-5 w-5" />
               <span>123 Main St, City, Country</span>

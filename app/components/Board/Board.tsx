@@ -1,24 +1,35 @@
+import Image from "next/image";
 import React from "react";
 
 function Board() {
   return (
-    <div className="px-16 pt-20 pb-10">
-      <div className="w-full flex flex-col items-center justify-center">
+    <div className="px-4 md:px-16 pt-20 pb-10">
+      <div className="w-full flex-col items-center justify-center hidden md:flex">
         <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
           Board of Directors
         </h3>
       </div>
       <div>
-        <div className="grid grid-cols-12 gap-2 mt-10 text-gray-600 mb-20">
-          <div className="col-span-2">
+        <div className="md:grid grid-cols-12 gap-2 mt-10 text-gray-600 mb-20">
+          <div className="col-span-2 hidden md:block">
             <h2 className="text-lg font-semibold"> Yu Ka Ki </h2>
             <h2 className="font-semibold"> GCC Chairman </h2>
           </div>
-          <div className="col-span-2 w-20 h-20 rounded-full bg-primary relative">
-            <div className="absolute top-1/2 left-1/2 w-1 h-[1850px] bg-primary"></div>
+          <div className="col-span-2 w-20 h-20 rounded-full relative hidden md:block">
+            <div className="absolute top-1/2 left-1/2 w-1 h-[2900px] lg:h-[1850px] bg-primary"></div>
+            <Image
+              src="/home/yukaki.png"
+              alt="GCC Chairman"
+              fill
+              className="rounded-full"
+            />
           </div>
-          <div className="col-span-8">
-            <p className="text-lg w-[750px]">
+          <div className="col-span-8 w-full">
+            <div className="mb-4 md:hidden">
+              <h2 className="text-4xl font-semibold"> Yu Ka Ki </h2>
+              <h2 className="text-2xl font-semibold"> GCC Chairman </h2>
+            </div>
+            <p className="text-lg w-full lg:w-[750px]">
               Mr Yu is the chairman of GCC. He has years of experience of
               running business. He is broadly expose to different kinds of
               industries, having achievements on property, information
@@ -28,7 +39,7 @@ function Board() {
               University, master degree of Estate Surveying from The University
               of Hong Kong, and Law degree from University of London.
             </p>
-            <p className="text-lg w-[750px] mt-4">
+            <p className="text-lg lg:w-[750px] mt-4">
               From his age of 26, he was already appointed different positions
               to contribute to the society by Hong Kong government. At the same
               year, he was appointed to become the member of Professional
@@ -41,7 +52,7 @@ function Board() {
               member of Jiangcheng district, Yeungkong city in Guangdong
               province, contributes to his motherland and community.
             </p>
-            <p className="text-lg w-[750px] mt-4">
+            <p className="text-lg lg:w-[750px] mt-4">
               In community service, he actively participates in Youth charity
               activities. He was appointed to become the chairman of Hong Kong
               Eastern Youth, vice president of Hong Kong Island Youth
@@ -56,13 +67,24 @@ function Board() {
             </p>
           </div>
 
-          <div className="col-span-2 mt-20">
+          <div className="col-span-2 mt-20 hidden md:block">
             <h2 className="text-lg font-semibold"> Ricky Lai </h2>
             <h2 className="font-semibold"> GCC Chairman </h2>
           </div>
-          <div className="col-span-2 mt-20 w-20 h-20 rounded-full bg-primary relative" />
+          <div className="col-span-2 mt-20 w-20 h-20 rounded-full relative hidden md:block">
+            <Image
+              src="/home/riki.png"
+              alt="GCC Chairman"
+              fill
+              className="rounded-full"
+            />
+          </div>
           <div className="col-span-8 mt-20">
-            <p className="text-lg w-[750px]">
+            <div className="mb-4 md:hidden">
+              <h2 className="text-4xl font-semibold"> Ricky Lai </h2>
+              <h2 className="text-2xl font-semibold"> GCC CEO </h2>
+            </div>
+            <p className="text-lg lg:w-[750px]">
               Mr. Lai is the executor director and CEO of GCC, graduated from
               the Hong Kong Polytechnic University, major in Accounting and
               Finance. He is a current registered member of Hong Kong Institute
@@ -73,7 +95,7 @@ function Board() {
               restructuring, merger and acquisition, property and securities
               investments.
             </p>
-            <p className="text-lg w-[750px] mt-4">
+            <p className="text-lg lg:w-[750px] mt-4">
               Together with his management expertise and business instincts, he
               visited dozens of countries seeking business opportunities in
               China, Cambodia, Myanmar, Thailand, Vietnam, Japan, Malaysia and
@@ -85,7 +107,7 @@ function Board() {
               different industries, and achieved outstanding results and
               recognitions.
             </p>
-            <p className="text-lg w-[750px] mt-4">
+            <p className="text-lg lg:w-[750px] mt-4">
               After working restlessly in leading the company in Cambodia, GCC
               is now one of the top 5 conglomerate enterprises in Cambodia. He
               also established Greater Bay Area Cambodia Association, the first
@@ -100,13 +122,27 @@ function Board() {
             </p>
           </div>
 
-          <div className="col-span-2 mt-20">
+          <div className="col-span-2 mt-20 hidden md:block">
             <h2 className="text-lg font-semibold"> Henry Ng</h2>
             <h2 className="font-semibold"> GCC Chief Marketing Officer </h2>
           </div>
-          <div className="col-span-2 mt-20 w-20 h-20 rounded-full bg-primary relative" />
+          <div className="col-span-2 mt-20 w-20 h-20 rounded-full  relative hidden md:block">
+            <Image
+              src="/home/henry.png"
+              alt="GCC Chairman"
+              fill
+              className="rounded-full"
+            />
+          </div>
           <div className="col-span-8 mt-20">
-            <p className="text-lg w-[750px]">
+            <div className="mb-4 md:hidden">
+              <h2 className="text-4xl font-semibold"> Henry Ng </h2>
+              <h2 className="text-2xl font-semibold">
+                {" "}
+                GCC Chief Marketing Officer{" "}
+              </h2>
+            </div>
+            <p className="text-lg lg:w-[750px]">
               Chief Marketing Director Henry Ng Mr. Ng was graduated from Oxford
               Brookes University with a degree of BBA. He is also a member of
               The Chartered Institute of Marketing. Right after his graduation,
@@ -114,7 +150,7 @@ function Board() {
               financial planning, marketing promotion. He has experience in
               managing sales team for over ten years.
             </p>
-            <p className="text-lg w-[750px] mt-4">
+            <p className="text-lg lg:w-[750px] mt-4">
               In his early years, he took part in developing property
               information platform system named eAgent. He was in a position of
               director, responsible for overall planning on the whole business
@@ -123,7 +159,7 @@ function Board() {
               cooperating with big banks. The performance speaks for itself and
               it was awarded with many market recognized prizes.
             </p>
-            <p className="text-lg w-[750px] mt-4">
+            <p className="text-lg lg:w-[750px] mt-4">
               In the scope of property selling, he led his team to explore China
               Big Bay area business. He had his whole promotion planning
               management system in Zhuhai, Zhongshan and Huizhou. He cooperated
