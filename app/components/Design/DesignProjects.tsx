@@ -48,8 +48,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/apartment/1.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Apartment Project 1"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -58,8 +58,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/apartment/7.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Apartment Project 2"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -68,8 +68,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/apartment/3.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Apartment Project 3"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -78,8 +78,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/apartment/8.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Apartment Project 4"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -88,8 +88,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/apartment/5.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Apartment Project 5"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -98,8 +98,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/apartment/6.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Apartment Project 6"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -117,8 +117,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/commercial/7.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Commercial Project 1"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -127,8 +127,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/commercial/2.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Commercial Project 2"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -137,8 +137,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/commercial/3.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Commercial Project 3"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -147,8 +147,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/commercial/4.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Commercial Project 4"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -157,8 +157,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/commercial/5.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Commercial Project 5"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -167,8 +167,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/commercial/6.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Commercial Project 6"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -186,8 +186,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/office/8.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Office Project 1"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -196,8 +196,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/office/2.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Office Project 2"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -206,8 +206,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/office/3.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Office Project 3"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -216,8 +216,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/office/4.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Office Project 4"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -226,8 +226,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/office/5.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Office Project 5"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -236,8 +236,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/office/6.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Office Project 6"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -255,8 +255,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/restaurant/1.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Restaurant Project 1"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -265,8 +265,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/restaurant/2.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Restaurant Project 2"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -275,8 +275,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/restaurant/3.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Restaurant Project 3"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -285,8 +285,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/restaurant/4.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Restaurant Project 4"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -295,8 +295,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/restaurant/5.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Restaurant Project 5"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
@@ -305,8 +305,8 @@ function DesignProjects() {
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
                   src="/design/restaurant/6.jpg"
-                  width={600}
-                  height={600}
+                  width={1920}
+                  height={1080}
                   alt="Restaurant Project 6"
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
