@@ -116,7 +116,7 @@ function DesignProjects() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/commercial/7.jpg"
+                  src="/design/Commercial/7.jpg"
                   width={1920}
                   height={1080}
                   alt="Commercial Project 1"
@@ -126,7 +126,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/commercial/2.jpg"
+                  src="/design/Commercial/2.jpg"
                   width={1920}
                   height={1080}
                   alt="Commercial Project 2"
@@ -136,7 +136,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/commercial/3.jpg"
+                  src="/design/Commercial/3.jpg"
                   width={1920}
                   height={1080}
                   alt="Commercial Project 3"
@@ -146,7 +146,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/commercial/4.jpg"
+                  src="/design/Commercial/4.jpg"
                   width={1920}
                   height={1080}
                   alt="Commercial Project 4"
@@ -156,7 +156,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/commercial/5.jpg"
+                  src="/design/Commercial/5.jpg"
                   width={1920}
                   height={1080}
                   alt="Commercial Project 5"
@@ -166,7 +166,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/commercial/6.jpg"
+                  src="/design/Commercial/6.jpg"
                   width={1920}
                   height={1080}
                   alt="Commercial Project 6"
@@ -254,7 +254,7 @@ function DesignProjects() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/restaurant/1.jpg"
+                  src="/design/Restaurant/1.jpg"
                   width={1920}
                   height={1080}
                   alt="Restaurant Project 1"
@@ -264,7 +264,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/restaurant/2.jpg"
+                  src="/design/Restaurant/2.jpg"
                   width={1920}
                   height={1080}
                   alt="Restaurant Project 2"
@@ -274,7 +274,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/restaurant/3.jpg"
+                  src="/design/Restaurant/3.jpg"
                   width={1920}
                   height={1080}
                   alt="Restaurant Project 3"
@@ -284,7 +284,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/restaurant/4.jpg"
+                  src="/design/Restaurant/4.jpg"
                   width={1920}
                   height={1080}
                   alt="Restaurant Project 4"
@@ -294,7 +294,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/restaurant/5.jpg"
+                  src="/design/Restaurant/5.jpg"
                   width={1920}
                   height={1080}
                   alt="Restaurant Project 5"
@@ -304,7 +304,7 @@ function DesignProjects() {
 
               <div className="aspect-square relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/design/restaurant/6.jpg"
+                  src="/design/Restaurant/6.jpg"
                   width={1920}
                   height={1080}
                   alt="Restaurant Project 6"
