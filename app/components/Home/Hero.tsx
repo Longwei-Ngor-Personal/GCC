@@ -14,7 +14,7 @@ const images = [
 ];
 
 const logos = [
-  "/home/gclogo.webp",
+  "/home/logo-small(3).png",
   "/home/fundlogo.png",
   "/home/trustlogo.png",
   "/home/designlogo.png",

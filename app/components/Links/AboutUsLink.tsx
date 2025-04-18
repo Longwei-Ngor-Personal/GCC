@@ -47,7 +47,7 @@ const AboutUsContent = () => {
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="space-y-3">
           <a href="/about" className="block text-sm hover:underline">
-            About GC City
+            About GCC
           </a>
           <a href="/board" className="block text-sm hover:underline">
             Board of Directors

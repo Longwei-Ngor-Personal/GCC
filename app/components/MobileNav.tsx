@@ -181,7 +181,7 @@ const LINKS = [
         title: "",
         href: "#about",
         links: [
-          { title: "GC City", href: "/about" },
+          { title: "About GCC", href: "/about" },
           { title: "Board of Directors", href: "/board" },
         ],
       },
