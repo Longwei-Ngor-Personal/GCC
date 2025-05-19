@@ -7,13 +7,14 @@ function FundBackground() {
         <div className="lg:grid grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Cambodia's Economy and Investment Opportunities{" "}
+              Cambodia&apos;s Economy and Investment Opportunities{" "}
             </h2>
             <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-              Cambodia's economy is skyrocketing. Its average GDP growth rate
-              hit 7% for 7 consecutive years, the highest in ASEAN in 2019. Its
-              industry chain is also skyrocketing, from textiles to electronics
-              and vehicle parts. Cambodia became the new "Asian Tiger."
+              Cambodia&apos;s economy is skyrocketing. Its average GDP growth
+              rate hit 7% for 7 consecutive years, the highest in ASEAN in 2019.
+              Its industry chain is also skyrocketing, from textiles to
+              electronics and vehicle parts. Cambodia became the new
+              &ldquo;Asian Tiger.&rdquo;
             </p>
             <div className="grid grid-cols-2 gap-8 mt-4">
               <div>
@@ -21,7 +22,7 @@ function FundBackground() {
                   Economic Growth
                 </h3>
                 <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                  Since entering the WTO in 2004, Cambodia's poverty rate
+                  Since entering the WTO in 2004, Cambodia&apos;s poverty rate
                   dropped sharply from 53.2% to 10%. This rapid reduction
                   reflects significant economic improvement.
                 </p>
