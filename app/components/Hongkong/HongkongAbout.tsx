@@ -5,7 +5,7 @@ function HongkongAbout() {
   return (
     <section id="about" className="py-20">
       <div className="mx-auto px-4 md:px-16">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="w-full mx-auto text-left mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             About GCC Hong Kong
           </h2>

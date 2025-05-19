@@ -3,9 +3,9 @@ import React from "react";
 
 function JapanMission() {
   return (
-    <section id="mission" className="py-20 bg-black/10">
+    <section id="mission" className="py-16 bg-black/10">
       <div className="mx-auto px-4 md:px-16">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
         </div>
 
