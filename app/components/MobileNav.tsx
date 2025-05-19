@@ -105,13 +105,12 @@ const NavLink = ({
       }}
       exit={{ opacity: 0, y: -8 }}
       href={href}
-      className={`block ${
-        isSubLink
+      className={`block ${isSubLink
           ? "text-base font-normal text-[#91754c] transition-colors hover:text-[#8C7246] md:text-lg hover:underline"
           : isSubHeader
-          ? "text-xl font-medium text-[#866d46] transition-colors hover:text-[#8C7246] md:text-2xl"
-          : "text-2xl font-semibold text-[#8C7246] transition-colors  md:text-3xl"
-      }`}
+            ? "text-xl font-medium text-[#866d46] transition-colors hover:text-[#8C7246] md:text-2xl"
+            : "text-2xl font-semibold text-[#8C7246] transition-colors  md:text-3xl"
+        }`}
     >
       {children}
       {!isSubLink && !isSubHeader && "."}
@@ -134,10 +133,9 @@ const HamburgerButton = ({
         variants={UNDERLAY_VARIANTS}
         style={{ top: 16, right: 16 }}
         className={`fixed z-10 rounded-xl -mt-2  
-          ${
-            active
-              ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
-              : "bg-white/0"
+          ${active
+            ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
+            : "bg-white/0"
           }`}
       />
 
@@ -145,9 +143,8 @@ const HamburgerButton = ({
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${
-          active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
-        }`}
+        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
+          }`}
       >
         <motion.span
           variants={HAMBURGER_VARIANTS.top}
@@ -205,7 +202,7 @@ const LINKS = [
         href: "#",
         links: [
           { title: "GC Trust", href: "#" },
-          { title: "GC Fund", href: "#" },
+          { title: "GC Fund", href: "/fund" },
         ],
       },
       {
@@ -231,7 +228,7 @@ const LINKS = [
       {
         title: "Cultural Communication",
         href: "#",
-        links: [{ title: "GC Media", href: "#" }],
+        links: [{ title: "GC Media", href: "/media" }],
       },
       {
         title: "Charity & Public Welfare",

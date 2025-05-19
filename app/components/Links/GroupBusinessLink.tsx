@@ -65,9 +65,8 @@ const CategoryDropdown = ({
         {title}
         <ChevronDown
           size={16}
-          className={`transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+            }`}
         />
       </button>
       <AnimatePresence>
@@ -111,7 +110,7 @@ const AboutUsContent = () => {
       title: "Financial Investment",
       links: [
         { href: "#", text: "GC Trust" },
-        { href: "#", text: "GC Fund" },
+        { href: "/fund", text: "GC Fund" },
       ],
     },
     {
@@ -133,7 +132,7 @@ const AboutUsContent = () => {
     },
     {
       title: "Cultural Communication",
-      links: [{ href: "#", text: "GC Media" }],
+      links: [{ href: "/media", text: "GC Media" }],
     },
     {
       title: "Charity & Public Welfare",
