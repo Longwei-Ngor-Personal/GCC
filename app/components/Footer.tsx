@@ -12,11 +12,14 @@ export default function Footer() {
             <Image src="/home/logo.png" alt="Logo" width={200} height={100} />
             <div className="flex items-center space-x-2 pt-10">
               <MapPin className="h-5 w-5" />
-              <span>123 Main St, City, Country</span>
+              <span className="max-w-lg">
+                Guangdong Investment Tower 21/Floor, 148 Connaught Rd Central,
+                Sheung Wan, Hong Kong
+              </span>
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="h-5 w-5" />
-              <span>+1 (123) 456-7890</span>
+              <span>+852 530 13176</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-5 w-5" />
