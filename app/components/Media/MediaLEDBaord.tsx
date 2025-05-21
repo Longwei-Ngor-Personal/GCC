@@ -19,42 +19,42 @@ function MediaLEDBoard() {
         <div className="lg:grid grid-cols-2 gap-4 items-start">
           <div className="col-span-1 space-y-4 hidden lg:block">
             <Image
-              src="/soho/sh1.png"
-              alt="SOHO MALL Interior"
+              src="/media/led1.jpg"
+                alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-full h-full aspect-square"
+              className="w-full h-full aspect-square object-cover"
             />
           </div>
           <div className="col-span-1 space-y-4 mt-4 md:mt-0">
             <div className="grid grid-cols-2 gap-4">
               <Image
-                src="/soho/sh1.png"
+                src="/media/led4.jpg"
                 alt="SOHO MALL Interior"
                 width={1920}
                 height={1080}
-                className="w-full h-auto aspect-square"
+                className="w-full h-auto aspect-square object-cover"
               />
               <Image
-                src="/soho/sh1.png"
+                src="/media/led3.jpg"
                 alt="SOHO MALL Interior"
                 width={1920}
                 height={1080}
-                className="w-full h-full aspect-square"
+                className="w-full h-full aspect-square object-cover"
               />
             </div>
             <Image
-              src="/soho/sh1.png"
+              src="/media/led2.jpg"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-full h-[300px]"
+              className="w-full h-[300px] object-cover"
             />
           </div>
         </div>
       </div>
     </section>
-  ); 
+  );
 }
-
+ 
 export default MediaLEDBoard;

@@ -15,14 +15,14 @@ function MediaAdvertisement() {
         <div className="md:grid grid-cols-3 gap-4 items-start">
           <div className="col-span-1 space-y-4">
             <Image
-              src="/soho/sh1.png"
+              src="/media/ads3.png"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-full lg:h-[500px]"
+              className="w-full lg:h-[500px] object-cover"
             />
             <Image
-              src="/soho/sh1.png"
+              src="/media/ads1.png"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
@@ -31,34 +31,34 @@ function MediaAdvertisement() {
           </div>
           <div className="col-span-1 space-y-4  mt-4 md:mt-0">
             <Image
-              src="/soho/sh1.png"
+              src="/media/ads2.png"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-full h-[250px]"
+              className="w-full h-[250px] object-cover"
             />
             <Image
-              src="/soho/sh1.png"
+              src="/media/ads4.png"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-full lg:h-[450px]"
+              className="w-full lg:h-[450px] object-cover"
             />
           </div>
           <div className="col-span-1 space-y-4 mt-4 md:mt-0">
             <Image
-              src="/soho/sh1.png"
+              src="/media/ads5.png"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-full lg:h-[500px]"
+              className="w-full lg:h-[500px] object-cover"
             />
             <Image
-              src="/soho/sh1.png"
+              src="/media/ads6.png"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-full h-[250px]"
+              className="w-full h-[250px] object-cover bg-center"
             />
           </div>
         </div>

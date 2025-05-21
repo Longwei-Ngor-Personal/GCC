@@ -19,25 +19,25 @@ function MediaPhotography() {
           </div>
           <div className="relative w-full flex items-center justify-center mt-5 lg:mt-0">
             <Image
-              src="/soho/sh1.png"
+              src="/media/photography1.jpg"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-[250px] h-[400px] md:w-[400px] md:h-[600px]"
+              className="w-[250px] h-[400px] md:w-[400px] md:h-[600px] object-cover"
             />
             <Image
-              src="/soho/sh1.png"
+              src="/media/photography2.jpg"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] absolute right-2 lg:-right-5 top-10"
+              className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] absolute right-2 lg:-right-5 top-10 object-cover"
             />
             <Image
-              src="/soho/sh1.png"
+              src="/media/photography3.jpg"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="w-[200px] h-[120px] md:w-[300px] md:h-[200px] absolute left-0 bottom-10 "
+              className="w-[200px] h-[120px] md:w-[300px] md:h-[200px] absolute left-0 bottom-10 object-cover"
             />
           </div>
         </div>

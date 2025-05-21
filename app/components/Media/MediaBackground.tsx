@@ -26,32 +26,32 @@ function MediaBackground() {
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-12">
           <Image
-            src="/soho/sh1.png"
+            src="/media/camera.avif"
             alt="SOHO MALL Interior"
             width={1920}
             height={1080}
-            className="w-full h-auto aspect-square "
+            className="w-full h-full object-cover"
           />
           <Image
-            src="/soho/sh1.png"
+            src="/media/editing.avif"
             alt="SOHO MALL Interior"
             width={1920}
             height={1080}
-            className="w-full h-auto aspect-square"
+            className="w-full h-full object-cover"
           />
           <Image
-            src="/soho/sh1.png"
+            src="/media/studio.avif"
             alt="SOHO MALL Interior"
             width={1920}
             height={1080}
-            className="w-full h-auto aspect-square"
+            className="w-full h-full object-cover"
           />
           <Image
-            src="/soho/sh1.png"
+            src="/media/team.avif"
             alt="SOHO MALL Interior"
             width={1920}
             height={1080}
-            className="w-full h-auto aspect-square"
+            className="w-full h-full object-cover aspect-square"
           />
         </div>
         <div className="w-full flex item-center justify-center text-center">

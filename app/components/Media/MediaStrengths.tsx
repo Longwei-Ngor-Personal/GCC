@@ -7,7 +7,7 @@ function MediaStrengths() {
         <div className="lg:grid grid-cols-2 gap-12 items-center">
           <div className="w-full mt-5 hidden lg:block">
             <Image
-              src="/soho/sh1.png"
+              src="/media/strength.avif"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function MediaAbout() {
   return (
     <section id="about" className="pt-20 pb-14">
@@ -19,15 +17,16 @@ function MediaAbout() {
               media business system.
             </p>
           </div>
-          <div className="w-full flex items-center justify-center mt-5 lg:mt-0">
-            <Image
-              src="/soho/sh1.png"
-              alt="SOHO MALL Interior"
-              width={1920}
-              height={1080}
-              className="w-full h-auto lg:aspect-square aspect-auto"
-            />
-          </div>
+          <video
+            src="https://gcc-gp.com/wp-content/uploads/2021/03/GC-MEDIA_V3.mp4"
+            autoPlay
+            muted
+            loop
+            controls
+            className="w-full h-full"
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>

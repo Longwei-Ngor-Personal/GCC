@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function FundBackground() {
   return (
-    <section id="about" className="py-14">
+    <section id="background" className="py-14">
       <div className="container mx-auto px-4">
         <div className="lg:grid grid-cols-2 gap-12 items-center">
           <div>
@@ -42,11 +42,11 @@ function FundBackground() {
           </div>
           <div className="w-full flex items-center justify-center mt-5 lg:mt-0">
             <Image
-              src="/soho/sh1.png"
+              src="/fund/fund.avif"
               alt="SOHO MALL Interior"
               width={1920}
               height={1080}
-              className="lg:w-[500px] w-full h-auto lg:aspect-square aspect-auto"
+              className="lg:w-[500px] w-full h-auto lg:aspect-square aspect-auto object-cover"
             />
           </div>
         </div>

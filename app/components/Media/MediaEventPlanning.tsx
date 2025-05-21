@@ -6,25 +6,25 @@ function MediaEventPlanning() {
       <div className="container mx-auto px-4">
         <div className="relative w-full flex items-center justify-center mt-5 lg:mt-0">
           <Image
-            src="/soho/sh1.png"
+            src="/media/planning3.jpg"
             alt="SOHO MALL Interior"
             width={1920}
             height={1080}
-            className="w-[80%] md:w-[70%] h-auto"
+            className="w-[80%] md:w-[70%] h-auto object-cover"
           />
           <Image
-            src="/soho/sh1.png"
+            src="/media/planning2.png"
             alt="SOHO MALL Interior"
             width={1920}
             height={1080}
-            className="absolute w-[100px] md:w-[200px] lg:w-[300px] -bottom-10 lg:-bottom-24 right-2 md:right-16 h-auto aspect-square"
+            className="absolute w-[100px] md:w-[200px] lg:w-[300px] -bottom-10 lg:-bottom-24 right-2 md:right-16 h-auto object-cover aspect-square"
           />
           <Image
-            src="/soho/sh1.png"
+            src="/media/planning1.jpg"
             alt="SOHO MALL Interior"
             width={1920}
             height={1080}
-            className="absolute w-[150px] md:w-[250px] lg:w-[400px] -bottom-10 lg:-bottom-16 left-2 md:left-16 h-auto"
+            className="absolute w-[150px] md:w-[250px] lg:w-[400px] -bottom-10 lg:-bottom-24 left-2 md:left-16 h-auto object-cover"
           />
         </div>
         <div className="mt-32 lg:mt-44 text-center">

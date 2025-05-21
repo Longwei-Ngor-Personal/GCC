@@ -18,11 +18,11 @@ function MediaAmbassadors() {
           <div className=" w-full flex flex-col md:flex-row items-center justify-center md:space-x-32 mt-5 ">
             <div>
               <Image
-                src="/soho/sh1.png"
+                src="/media/ambassador1.png"
                 alt="SOHO MALL Interior"
                 width={1920}
                 height={1080}
-                className="w-[200px] h-auto aspect-square"
+                className="w-[250px] h-[350px] object-cover"
               />
               <p className="text-gray-700 font-semibold mt-5 text-center">
                 Vivo Phone
@@ -30,11 +30,11 @@ function MediaAmbassadors() {
             </div>
             <div>
               <Image
-                src="/soho/sh1.png"
+                src="/media/ambassador2.png"
                 alt="SOHO MALL Interior"
                 width={1920}
                 height={1080}
-                className="w-[200px] h-auto aspect-square mt-10 md:mt-0"
+                className="w-[250px] h-[350px] object-cover mt-10 md:mt-0"
               />
               <p className="text-gray-700 font-semibold mt-5 text-center">
                 Toshiba Electronics
@@ -42,11 +42,11 @@ function MediaAmbassadors() {
             </div>
             <div>
               <Image
-                src="/soho/sh1.png"
+                src="/media/ambassador3.png"
                 alt="SOHO MALL Interior"
                 width={1920}
                 height={1080}
-                className="w-[200px] h-auto aspect-square mt-10 md:mt-0"
+                className="w-[250px] h-[350px] object-cover mt-10 md:mt-0"
               />
               <p className="text-gray-700 font-semibold mt-5 text-center">
                 SMART Telecom
