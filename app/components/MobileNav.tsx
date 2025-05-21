@@ -214,10 +214,10 @@ const LINKS = [
         title: "Catering & Entertainment",
         href: "#",
         links: [
-          { title: "Hong Kong Resturant", href: "#" },
-          { title: "Luk Hot Pot", href: "#" },
-          { title: "Singapore Bak Kut Teh", href: "#" },
-          { title: "GC Super", href: "#" },
+          { title: "Hong Kong Resturant", href: "/hongkongresturant" },
+          { title: "Luk Hot Pot", href: "/hotpot" },
+          { title: "Singapore Bak Kut Teh", href: "/singaporebakkutteh" },
+          { title: "GC Super", href: "/super" },
         ],
       },
       {
@@ -233,7 +233,7 @@ const LINKS = [
       {
         title: "Charity & Public Welfare",
         href: "#",
-        links: [{ title: "GC Care", href: "#" }],
+        links: [{ title: "GC Care", href: "/care" }],
       },
     ],
   },

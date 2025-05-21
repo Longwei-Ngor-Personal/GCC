@@ -120,10 +120,10 @@ const AboutUsContent = () => {
     {
       title: "Catering & Entertainment",
       links: [
-        { href: "#", text: "Hong Kong Resturant" },
+        { href: "/hongkongresturant", text: "Hong Kong Resturant" },
         { href: "/hotpot", text: "Luk Hot Pot" },
-        { href: "#", text: "Singapore Bak Kut Teh" },
-        { href: "#", text: "GC Super" },
+        { href: "/singaporebakkutteh", text: "Singapore Bak Kut Teh" },
+        { href: "/super", text: "GC Super" },
       ],
     },
     {
@@ -136,7 +136,7 @@ const AboutUsContent = () => {
     },
     {
       title: "Charity & Public Welfare",
-      links: [{ href: "#", text: "GC Care" }],
+      links: [{ href: "/care", text: "GC Care" }],
     },
   ];
 
