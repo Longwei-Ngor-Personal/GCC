@@ -55,7 +55,7 @@ const LinksContainer = () => {
           >
             <div className="flex items-center justify-between">
               <p>{link.title}</p>
-              <ChevronDown className="w-4 h-4" />
+              {link.subHeaders && <ChevronDown className="w-4 h-4" />}
             </div>
           </NavLink>
 
@@ -120,12 +120,12 @@ const NavLink = ({
           onClick();
         }
       }}
-      className={`block cursor-pointer hover:underline ${
+      className={`block cursor-pointer  ${
         isSubLink
-          ? "text-base font-normal text-[#91754c] transition-colors hover:text-[#8C7246] md:text-lg hover:underline"
+          ? "text-base font-normal text-white transition-colors hover:text-[#8C7246] md:text-lg hover:underline"
           : isSubHeader
-            ? "text-xl font-medium text-[#866d46] transition-colors hover:text-[#8C7246] md:text-2xl"
-            : "text-2xl font-semibold text-[#8C7246] transition-colors  md:text-3xl"
+            ? "text-xl font-medium text-white transition-colors hover:text-[#8C7246] md:text-2xl"
+            : "text-2xl font-semibold text-white transition-colors  md:text-3xl"
       }`}
     >
       {children}
@@ -272,6 +272,14 @@ const LINKS = [
   {
     title: "Information",
     href: "#",
+  },
+  {
+    title: "Investment QA",
+    href: "/investmentqa",
+  },
+  {
+    title: "Social Responsibility",
+    href: "/socialresponsibility",
   },
 ];
 
