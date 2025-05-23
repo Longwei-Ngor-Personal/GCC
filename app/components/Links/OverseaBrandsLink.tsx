@@ -13,7 +13,7 @@ const OverseaBrandsLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit"
     >
-      <a href="#" className="relative font-bold">
+      <a href="#" className="relative font-bold text-sm">
         Oversea Branches
         <span
           style={{

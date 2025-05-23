@@ -7,6 +7,7 @@ import {
   useState,
 } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 export const MobileNav = () => {
   return (
@@ -36,17 +37,32 @@ const LinksOverlay = () => {
 };
 
 const LinksContainer = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleIndex = (index: number) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
     <motion.div className="space-y-6 p-12 pl-4 md:pl-20">
       {LINKS.map((link, idx) => (
         <div key={link.title} className="space-y-2">
-          <NavLink href={link.href} idx={idx}>
-            {link.title}
+          <NavLink
+            href={link.href}
+            idx={idx}
+            onClick={() => toggleIndex(idx)}
+            hasDropdown={!!link.subHeaders}
+          >
+            <div className="flex items-center justify-between">
+              <p>{link.title}</p>
+              <ChevronDown className="w-4 h-4" />
+            </div>
           </NavLink>
-          {link.subHeaders && (
+
+          {link.subHeaders && openIndex === idx && (
             <div className="ml-4 space-y-2">
               {link.subHeaders.map((subHeader, subIdx) => (
-                <div key={subHeader.title} className="space-y-1">
+                <div key={subHeader.title + subIdx} className="space-y-1">
                   <NavLink
                     href={subHeader.href}
                     idx={idx + subIdx * 0.1}
@@ -54,6 +70,7 @@ const LinksContainer = () => {
                   >
                     {subHeader.title}
                   </NavLink>
+
                   {"links" in subHeader && (
                     <div className="ml-4 space-y-1">
                       {subHeader.links.map((subLink, linkIdx) => (
@@ -81,39 +98,38 @@ const LinksContainer = () => {
 const NavLink = ({
   children,
   href,
-  idx,
   isSubHeader = false,
   isSubLink = false,
+  onClick,
+  hasDropdown = false,
 }: {
   children: ReactNode;
   href: string;
   idx: number;
   isSubHeader?: boolean;
   isSubLink?: boolean;
+  onClick?: () => void;
+  hasDropdown?: boolean;
 }) => {
   return (
     <motion.a
-      initial={{ opacity: 0, y: -8 }}
-      animate={{
-        opacity: 1,
-        y: 0,
-        transition: {
-          delay: 0.75 + idx * 0.125,
-          duration: 0.5,
-          ease: "easeInOut",
-        },
+      href={hasDropdown ? "#" : href}
+      onClick={(e) => {
+        if (hasDropdown && onClick) {
+          e.preventDefault(); // prevent navigation
+          onClick();
+        }
       }}
-      exit={{ opacity: 0, y: -8 }}
-      href={href}
-      className={`block ${isSubLink
+      className={`block cursor-pointer hover:underline ${
+        isSubLink
           ? "text-base font-normal text-[#91754c] transition-colors hover:text-[#8C7246] md:text-lg hover:underline"
           : isSubHeader
             ? "text-xl font-medium text-[#866d46] transition-colors hover:text-[#8C7246] md:text-2xl"
             : "text-2xl font-semibold text-[#8C7246] transition-colors  md:text-3xl"
-        }`}
+      }`}
     >
       {children}
-      {!isSubLink && !isSubHeader && "."}
+      {!isSubLink && !isSubHeader}
     </motion.a>
   );
 };
@@ -133,9 +149,10 @@ const HamburgerButton = ({
         variants={UNDERLAY_VARIANTS}
         style={{ top: 16, right: 16 }}
         className={`fixed z-10 rounded-xl -mt-2  
-          ${active
-            ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
-            : "bg-white/0"
+          ${
+            active
+              ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
+              : "bg-white/0"
           }`}
       />
 
@@ -143,8 +160,9 @@ const HamburgerButton = ({
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
-          }`}
+        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${
+          active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
+        }`}
       >
         <motion.span
           variants={HAMBURGER_VARIANTS.top}

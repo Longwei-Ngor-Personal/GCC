@@ -12,7 +12,7 @@ const AboutUsLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit z-50"
     >
-      <a href="#" className="relative font-bold">
+      <a href="#" className="relative font-bold text-sm">
         About Us
         <span
           style={{

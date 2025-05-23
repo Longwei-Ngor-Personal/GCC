@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-const InformationLink = () => {
+const InvestmentQALink = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -11,8 +11,8 @@ const InformationLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit"
     >
-      <a href="#" className="relative font-bold text-sm">
-        Information
+      <a href="/investmentqa" className="relative font-bold text-sm">
+        Investment QA
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",
@@ -24,4 +24,4 @@ const InformationLink = () => {
   );
 };
 
-export default InformationLink;
+export default InvestmentQALink;
