@@ -211,7 +211,10 @@ const LINKS = [
         href: "#",
         links: [
           { title: "Nadi by GC City", href: "/nadi" },
-          { title: "GC Orussey", href: "/orussey" },
+          {
+            title: "GC Orussey",
+            href: "https://gcc-gp.com/en/gc-orussey-market/",
+          },
           { title: "SOHO Mall", href: "/soho" },
         ],
       },
@@ -270,16 +273,18 @@ const LINKS = [
     ],
   },
   {
-    title: "Information",
+    title: "Information Centre",
     href: "#",
-  },
-  {
-    title: "Investment QA",
-    href: "/investmentqa",
-  },
-  {
-    title: "Social Responsibility",
-    href: "/socialresponsibility",
+    subHeaders: [
+      {
+        title: "",
+        href: "#",
+        links: [
+          { title: "Investment Q&A", href: "/investmentqa" },
+          { title: "Social Responsibility", href: "/socialresponsibility" },
+        ],
+      },
+    ],
   },
 ];
 

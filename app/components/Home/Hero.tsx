@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
-  "/home/gccity.webp",
+  "/home/bluebg.png",
   "/home/gcfund.webp",
   "/home/gctrust.webp",
   "/design/gcdesignbg.avif", // Add more image paths as needed
@@ -14,7 +14,7 @@ const images = [
 ];
 
 const logos = [
-  "/home/logo-small(3).png",
+  "/home/logobig.png",
   "/home/fundlogo.png",
   "/home/trustlogo.png",
   "/home/designlogo.png",
@@ -27,21 +27,21 @@ function Hero() {
 
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
     );
 
     setCurrentLogoIndex((prevIndex) =>
-      prevIndex === 0 ? logos.length - 1 : prevIndex - 1
+      prevIndex === 0 ? logos.length - 1 : prevIndex - 1,
     );
   };
 
   const handleNextClick = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
     );
 
     setCurrentLogoIndex((prevIndex) =>
-      prevIndex === logos.length - 1 ? 0 : prevIndex + 1
+      prevIndex === logos.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
@@ -67,7 +67,9 @@ function Hero() {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 -z-20" />
+      <div
+        className={`absolute top-0 left-0 w-full h-full bg-black ${currentImageIndex == 0 ? "opacity-0" : "opacity-70"} -z-20`}
+      />
 
       {/* Content */}
       <div className="w-full h-full ">
@@ -79,7 +81,7 @@ function Hero() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: "linear" }}
-            className="relative w-[400px] h-[400px]"
+            className={`relative mt-28 ${currentLogoIndex == 0 ? "w-[600px] h-[600px]" : "w-[500px] h-[500px]"}`}
           >
             <Image
               src={logos[currentLogoIndex]}

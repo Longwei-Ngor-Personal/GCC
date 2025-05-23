@@ -65,8 +65,9 @@ const CategoryDropdown = ({
         {title}
         <ChevronDown
           size={16}
-          className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
-            }`}
+          className={`transition-transform duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
         />
       </button>
       <AnimatePresence>
@@ -102,7 +103,10 @@ const AboutUsContent = () => {
       title: "Real Estate Development",
       links: [
         { href: "/nadi", text: "NADI by GC CITY" },
-        { href: "/orussey", text: "GC Orussey" },
+        {
+          href: "https://gcc-gp.com/en/gc-orussey-market/",
+          text: "GC Orussey",
+        },
         { href: "/soho", text: "SOHO Mall" },
       ],
     },
