@@ -216,7 +216,7 @@ const LINKS = [
         links: [
           { title: "Hong Kong Resturant", href: "/hongkongresturant" },
           { title: "Luk Hot Pot", href: "/hotpot" },
-          { title: "Singapore Bak Kut Teh", href: "/singaporebakkutteh" },
+          { title: "Singapore Bak Kut Teh", href: "/bakkutteh" },
           { title: "GC Super", href: "/super" },
         ],
       },

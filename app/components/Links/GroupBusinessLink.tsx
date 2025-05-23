@@ -122,7 +122,7 @@ const AboutUsContent = () => {
       links: [
         { href: "/hongkongresturant", text: "Hong Kong Resturant" },
         { href: "/hotpot", text: "Luk Hot Pot" },
-        { href: "/singaporebakkutteh", text: "Singapore Bak Kut Teh" },
+        { href: "/bakkutteh", text: "Singapore Bak Kut Teh" },
         { href: "/super", text: "GC Super" },
       ],
     },
