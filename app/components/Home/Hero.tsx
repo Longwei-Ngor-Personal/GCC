@@ -7,6 +7,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
   "/home/bluebg.png",
+  "/hero.png",
   "/home/gcfund.webp",
   "/home/gctrust.webp",
   "/design/gcdesignbg.avif", // Add more image paths as needed
@@ -15,6 +16,7 @@ const images = [
 
 const logos = [
   "/home/logobig.png",
+  "/home/logo.png",
   "/home/fundlogo.png",
   "/home/trustlogo.png",
   "/home/designlogo.png",
