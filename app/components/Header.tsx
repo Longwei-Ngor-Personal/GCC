@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import AboutUsLink from "./Links/AboutUsLink";
 import GroupBusinessLink from "./Links/GroupBusinessLink";
 import OverseaBrandsLink from "./Links/OverseaBrandsLink";
-import InformationLink from "./Links/InformationLink";
 import { FiArrowRight } from "react-icons/fi";
 import { MobileNav } from "./MobileNav";
 import InvestmentQALink from "./Links/InvestmentQALink";
