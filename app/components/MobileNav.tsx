@@ -273,18 +273,12 @@ const LINKS = [
     ],
   },
   {
-    title: "Information Centre",
-    href: "#",
-    subHeaders: [
-      {
-        title: "",
-        href: "#",
-        links: [
-          { title: "Investment Q&A", href: "/investmentqa" },
-          { title: "Social Responsibility", href: "/socialresponsibility" },
-        ],
-      },
-    ],
+    title: "Investment Q&A",
+    href: "/investmentqa",
+  },
+  {
+    title: "Social Responsibility",
+    href: "/socialresponsibility",
   },
 ];
 
