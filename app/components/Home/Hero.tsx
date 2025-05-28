@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
-  "/home/bluebg.png",
+  "/home/hero.png",
   "/hero.png",
   "/home/gcfund.webp",
   "/home/gctrust.webp",
@@ -16,7 +16,7 @@ const images = [
 
 const logos = [
   "/home/logobig.png",
-  "/home/logo.png",
+  "/nadi/gcclogo.png",
   "/home/fundlogo.png",
   "/home/trustlogo.png",
   "/home/designlogo.png",
@@ -70,7 +70,7 @@ function Hero() {
 
       {/* Overlay */}
       <div
-        className={`absolute top-0 left-0 w-full h-full bg-black ${currentImageIndex == 0 ? "opacity-0" : "opacity-70"} -z-20`}
+        className={`absolute top-0 left-0 w-full h-full bg-black opacity-70 -z-20`}
       />
 
       {/* Content */}
