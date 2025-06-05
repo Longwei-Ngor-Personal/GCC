@@ -7,10 +7,6 @@ function TrustWhy() {
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
               Why use a trust ?
             </h2>
-            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              Our interior design is a combination of art and science, coming
-              from design includes:
-            </p>
           </div>
         </div>
 
@@ -23,9 +19,9 @@ function TrustWhy() {
             </div>
             <div className="text-center px-6 pb-6">
               <p className="text-sm text-muted-foreground">
-                Cambodia's current constitution , the Land Law , stipulates that
-                land certificates are divided into: possession certificates (
-                soft cards , permanent holding ) issued by the provincial
+                Cambodia&apos;s current constitution , the Land Law , stipulates
+                that land certificates are divided into: possession certificates
+                ( soft cards , permanent holding ) issued by the provincial
                 government, ownership certificates ( hard cards , permanent
                 holding ) issued directly by the government, and strata property
                 rights ( leased land ) . Among them, non-Cambodian passport
