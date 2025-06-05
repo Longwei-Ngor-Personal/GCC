@@ -222,7 +222,7 @@ const LINKS = [
         title: "Financial Investment",
         href: "#",
         links: [
-          { title: "GC Trust", href: "#" },
+          { title: "GC Trust", href: "/trust" },
           { title: "GC Fund", href: "/fund" },
         ],
       },

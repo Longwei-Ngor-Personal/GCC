@@ -5,7 +5,7 @@ function DesignServices() {
   return (
     <section
       id="services"
-      className="w-full py-12 md:py-24 lg:py-32 bg-black/10"
+      className="w-full py-12 md:py-24 lg:py-32 bg-[#F3F4F6]"
     >
       <div className="px-4 md:px-16">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">

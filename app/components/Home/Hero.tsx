@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
-  "/home/hero.png",
+  "/home/hero-cropped.png",
   "/hero.png",
   "/home/gcfund.webp",
   "/home/gctrust.webp",
@@ -16,7 +16,7 @@ const images = [
 
 const logos = [
   "/home/logobig.png",
-  "/nadi/gcclogo.png",
+  "/nadi/gcc-logo.png",
   "/home/fundlogo.png",
   "/home/trustlogo.png",
   "/home/designlogo.png",

@@ -9,7 +9,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between">
           {/* Left Section: Logo and Contact Information */}
           <div className="mb-8 md:mb-0 space-y-4 text-sm lg:text-base">
-            <Image src="/home/logo.png" alt="Logo" width={200} height={100} />
+            <Image
+              src="/home/gcc-logo.png"
+              alt="Logo"
+              width={250}
+              height={100}
+            />
             <div className="flex items-center space-x-2 pt-10">
               <MapPin className="h-5 w-5" />
               <span className="max-w-lg">
@@ -100,8 +105,8 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-muted-foreground/20 text-center text-sm lg:text-base">
           <p>
-            &copy; {new Date().getFullYear()} Your Company Name. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Golden Cambodia Century. All
+            rights reserved.
           </p>
         </div>
       </div>

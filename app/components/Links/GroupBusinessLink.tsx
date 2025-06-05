@@ -113,7 +113,7 @@ const AboutUsContent = () => {
     {
       title: "Financial Investment",
       links: [
-        { href: "#", text: "GC Trust" },
+        { href: "/trust", text: "GC Trust" },
         { href: "/fund", text: "GC Fund" },
       ],
     },
