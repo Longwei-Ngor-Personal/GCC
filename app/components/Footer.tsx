@@ -46,7 +46,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/team" className="hover:underline">
+                  <Link href="/board" className="hover:underline">
                     Chairman Message <br /> & Board of Directors
                   </Link>
                 </li>
@@ -60,22 +60,25 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2 text-sm lg:text-base">
                 <li>
-                  <Link href="/groups/tech" className="hover:underline">
+                  <Link href="https://cm2h.com/" className="hover:underline">
                     Cambodia My 2nd Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/groups/finance" className="hover:underline">
+                  <Link href="/nadi" className="hover:underline">
                     Nadi by GC City
                   </Link>
                 </li>
                 <li>
-                  <Link href="/groups/marketing" className="hover:underline">
+                  <Link
+                    href="https://gcc-gp.com/en/gc-orussey-market/"
+                    className="hover:underline"
+                  >
                     GC Orussey
                   </Link>
                 </li>
                 <li>
-                  <Link href="/groups/marketing" className="hover:underline">
+                  <Link href="/media" className="hover:underline">
                     GC Media
                   </Link>
                 </li>
@@ -89,12 +92,12 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2 text-sm lg:text-base">
                 <li>
-                  <Link href="/brands" className="hover:underline">
+                  <Link href="/hongkong" className="hover:underline">
                     GC Hong Kong
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy" className="hover:underline">
+                  <Link href="/japan" className="hover:underline">
                     GC Japan
                   </Link>
                 </li>
