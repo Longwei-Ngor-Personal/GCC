@@ -17,25 +17,6 @@ function DesignProjects() {
           </div>
         </div>
 
-        {/* Project Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
-          <button className="px-6 py-2 rounded-full bg-primary text-white font-medium transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50">
-            All Projects
-          </button>
-          <button className="px-6 py-2 rounded-full bg-white/70 backdrop-blur-sm font-medium transition-all hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50">
-            Apartment
-          </button>
-          <button className="px-6 py-2 rounded-full bg-white/70 backdrop-blur-sm font-medium transition-all hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50">
-            Commercial
-          </button>
-          <button className="px-6 py-2 rounded-full bg-white/70 backdrop-blur-sm font-medium transition-all hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50">
-            Office
-          </button>
-          <button className="px-6 py-2 rounded-full bg-white/70 backdrop-blur-sm font-medium transition-all hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50">
-            Restaurant
-          </button>
-        </div>
-
         {/* Project Categories */}
         <div className="space-y-16">
           {/* Apartment Projects */}

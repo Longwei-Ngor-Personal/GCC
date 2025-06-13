@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function FundPartners() {
   return (
-    <section className="py-14">
+    <section className="py-14 bg-[#F3F4F6]">
       <div className="container mx-auto px-4">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">

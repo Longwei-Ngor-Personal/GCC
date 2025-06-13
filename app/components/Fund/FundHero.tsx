@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Header from "../Header";
 
 function FundHero() {
   return (
@@ -15,9 +14,9 @@ function FundHero() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
       </div>
-      <div className="absolute inset-0 w-full h-full text-primary">
-        <Header />
-      </div>
+      {/* <div className="absolute inset-0 w-full h-full text-primary"> */}
+      {/*   <Header /> */}
+      {/* </div> */}
     </section>
   );
 }
