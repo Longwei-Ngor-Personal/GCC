@@ -24,9 +24,8 @@ function Header() {
 
   return (
     <nav
-      className={`fixed w-full flex justify-between items-center z-50 py-4 px-4 md:px-16 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-md" : ""
-      }`}
+      className={`fixed w-full flex justify-between items-center z-50 py-4 px-4 md:px-16 transition-all duration-300 ${isScrolled ? "bg-white/80 backdrop-blur-md" : ""
+        }`}
     >
       <Link href="/" className="hidden lg:block">
         <Image src="/home/gcc-logo.png" alt="Logo" width={250} height={100} />
@@ -46,7 +45,7 @@ function Header() {
         <SocialResponsibilityLink />
         <section className="grid place-content-center">
           <Link href="/contactus">
-            <button className="group text-sm flex h-10 items-center gap-2 rounded-full bg-neutral-500 pl-3 pr-4 transition-all duration-300 ease-in-out hover:bg-neutral-600 hover:pl-2 hover:text-primary active:bg-neutral-700">
+            <button className="group flex h-10 items-center gap-2 rounded-full bg-neutral-500 pl-3 pr-4 transition-all duration-300 ease-in-out hover:bg-neutral-600 hover:pl-2 hover:text-primary active:bg-neutral-700">
               <span className="rounded-full bg-primary p-1 text-sm transition-colors duration-300 group-hover:bg-neutral-primary">
                 <FiArrowRight className="-translate-x-[200%] text-[0px] transition-all duration-300 group-hover:translate-x-0 group-hover:text-lg group-hover:text-white group-active:-rotate-45" />
               </span>

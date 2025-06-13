@@ -11,7 +11,7 @@ const SocialResponsibilityLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit"
     >
-      <a href="/socialresponsibility" className="relative font-bold text-sm">
+      <a href="/socialresponsibility" className="relative font-bold">
         Social Responsibility
         <span
           style={{

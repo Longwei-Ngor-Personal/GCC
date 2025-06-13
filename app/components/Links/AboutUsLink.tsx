@@ -12,7 +12,7 @@ const AboutUsLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit z-50"
     >
-      <a href="#" className="relative font-bold text-sm">
+      <a href="#" className="relative font-bold">
         About Us
         <span
           style={{
@@ -46,10 +46,10 @@ const AboutUsContent = () => {
     <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="space-y-3">
-          <a href="/about" className="block text-sm hover:underline">
+          <a href="/about" className="block hover:underline">
             About GCC
           </a>
-          <a href="/board" className="block text-sm hover:underline">
+          <a href="/board" className="block hover:underline">
             Board of Directors
           </a>
         </div>

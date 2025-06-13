@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 
 const GroupBusinessLink = () => {
   const [open, setOpen] = useState(false);
@@ -13,7 +12,7 @@ const GroupBusinessLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit z-50"
     >
-      <a href="#" className="relative font-bold text-sm">
+      <a href="#" className="relative font-bold">
         Group Businesses
         <span
           style={{
@@ -42,117 +41,34 @@ const GroupBusinessLink = () => {
   );
 };
 
-interface Link {
-  href: string;
-  text: string;
-}
-
-const CategoryDropdown = ({
-  title,
-  links,
-}: {
-  title: string;
-  links: Link[];
-}) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const CategoryDropdown = ({ title, href }: { title: string; href: string }) => {
   return (
-    <div className="space-y-2">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full font-semibold"
-      >
-        {title}
-        <ChevronDown
-          size={16}
-          className={`transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
-      </button>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.2 }}
-            className="overflow-hidden"
-          >
-            <div className="space-y-2 ml-2">
-              {links.map((link: Link, index: number) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="block text-sm hover:underline"
-                >
-                  {link.text}
-                </a>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+    <a href={href} className="block hover:underline">
+      {title}
+    </a>
   );
 };
 
 const AboutUsContent = () => {
   const categories = [
-    {
-      title: "Real Estate Development",
-      links: [
-        { href: "/nadi", text: "NADI by GC CITY" },
-        {
-          href: "https://gcc-gp.com/en/gc-orussey-market/",
-          text: "GC Orussey",
-        },
-        { href: "/soho", text: "SOHO Mall" },
-      ],
-    },
-    {
-      title: "Financial Investment",
-      links: [
-        { href: "/trust", text: "GC Trust" },
-        { href: "/fund", text: "GC Fund" },
-      ],
-    },
-    {
-      title: "Property Management",
-      links: [{ href: "#", text: "GC City" }],
-    },
-    {
-      title: "Catering & Entertainment",
-      links: [
-        { href: "/hongkongresturant", text: "Hong Kong Resturant" },
-        { href: "/hotpot", text: "Luk Hot Pot" },
-        { href: "/bakkutteh", text: "Singapore Bak Kut Teh" },
-        { href: "/super", text: "GC Super" },
-      ],
-    },
-    {
-      title: "Architectural Design",
-      links: [{ href: "/design", text: "GC Design" }],
-    },
-    {
-      title: "Cultural Communication",
-      links: [{ href: "/media", text: "GC Media" }],
-    },
-    {
-      title: "Charity & Public Welfare",
-      links: [{ href: "/care", text: "GC Care" }],
-    },
+    { title: "Real Estate Development", href: "/nadi" },
+    { title: "Financial Investment", href: "/trust" },
+    { title: "Property Management", href: "#" },
+    { title: "Catering & Entertainment", href: "/hongkongresturant" },
+    { title: "Architectural Design", href: "/design" },
+    { title: "Cultural Communication", href: "/media" },
+    { title: "Charity & Public Welfare", href: "/care" },
   ];
 
   return (
-    <div className="grid w-full grid-cols-1 shadow-xl lg:w-[1000px]">
+    <div className="grid w-full grid-cols-1 shadow-xl lg:w-[300px]">
       <div className="col-span-12 gap-4 bg-primary p-6 text-white">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="space-y-3">
           {categories.map((category, index) => (
             <CategoryDropdown
               key={index}
               title={category.title}
-              links={category.links}
+              href={category.href}
             />
           ))}
         </div>

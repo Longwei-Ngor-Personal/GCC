@@ -13,7 +13,7 @@ const OverseaBrandsLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit"
     >
-      <a href="#" className="relative font-bold text-sm">
+      <a href="#" className="relative font-bold">
         Oversea Branches
         <span
           style={{
@@ -47,13 +47,13 @@ const AboutUsContent = () => {
     <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="space-y-3">
-          <Link href="/hongkong" className="block text-sm hover:underline">
+          <Link href="/hongkong" className="block hover:underline">
             GCC Hong Kong
           </Link>
-          <Link href="/japan" className="block text-sm hover:underline">
+          <Link href="/japan" className="block hover:underline">
             GCC Japan
           </Link>
-          <Link href="/" className="block text-sm hover:underline">
+          <Link href="/" className="block hover:underline">
             GCC China
           </Link>
         </div>
