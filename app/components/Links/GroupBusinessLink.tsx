@@ -53,8 +53,8 @@ const AboutUsContent = () => {
   const categories = [
     { title: "Real Estate Development", href: "/nadi" },
     { title: "Financial Investment", href: "/trust" },
-    { title: "Property Management", href: "#" },
-    { title: "Catering & Entertainment", href: "/hongkongresturant" },
+    { title: "Property Management", href: "/land" },
+    { title: "Catering & Entertainment", href: "/hotpot" },
     { title: "Architectural Design", href: "/design" },
     { title: "Cultural Communication", href: "/media" },
     { title: "Charity & Public Welfare", href: "/care" },

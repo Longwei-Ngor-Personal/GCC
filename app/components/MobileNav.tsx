@@ -7,7 +7,6 @@ import {
   useState,
 } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 
 export const MobileNav = () => {
   return (
@@ -31,61 +30,29 @@ const Nav = () => {
 const LinksOverlay = () => {
   return (
     <nav className="fixed right-4 top-4 z-40 h-[calc(100vh_-_32px)] w-[calc(100%_-_32px)] overflow-scroll">
+      <h1>Menu</h1>
       <LinksContainer />
     </nav>
   );
 };
 
 const LinksContainer = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleIndex = (index: number) => {
-    setOpenIndex((prev) => (prev === index ? null : index));
-  };
-
   return (
     <motion.div className="space-y-6 p-12 pl-4 md:pl-20">
-      {LINKS.map((link, idx) => (
-        <div key={link.title} className="space-y-2">
-          <NavLink
-            href={link.href}
-            idx={idx}
-            onClick={() => toggleIndex(idx)}
-            hasDropdown={!!link.subHeaders}
-          >
+      {LINKS.map((link) => (
+        <div key={link.title}>
+          <NavLink href={link.href} idx={0}>
             <div className="flex items-center justify-between">
               <p>{link.title}</p>
-              {link.subHeaders && <ChevronDown className="w-4 h-4" />}
             </div>
           </NavLink>
 
-          {link.subHeaders && openIndex === idx && (
-            <div className="ml-4 space-y-2">
-              {link.subHeaders.map((subHeader, subIdx) => (
-                <div key={subHeader.title + subIdx} className="space-y-1">
-                  <NavLink
-                    href={subHeader.href}
-                    idx={idx + subIdx * 0.1}
-                    isSubHeader
-                  >
-                    {subHeader.title}
-                  </NavLink>
-
-                  {"links" in subHeader && (
-                    <div className="ml-4 space-y-1">
-                      {subHeader.links.map((subLink, linkIdx) => (
-                        <NavLink
-                          key={subLink.title}
-                          href={subLink.href}
-                          idx={idx + subIdx * 0.1 + linkIdx * 0.05}
-                          isSubLink
-                        >
-                          {subLink.title}
-                        </NavLink>
-                      ))}
-                    </div>
-                  )}
-                </div>
+          {link.subHeaders && (
+            <div className="ml-4 space-y-2 mt-2">
+              {link.subHeaders.map((sub) => (
+                <NavLink key={sub.title} href={sub.href} idx={0} isSubHeader>
+                  {sub.title}
+                </NavLink>
               ))}
             </div>
           )}
@@ -120,13 +87,12 @@ const NavLink = ({
           onClick();
         }
       }}
-      className={`block cursor-pointer  ${
-        isSubLink
+      className={`block cursor-pointer  ${isSubLink
           ? "text-base font-normal text-white transition-colors hover:text-[#8C7246] md:text-lg hover:underline"
           : isSubHeader
             ? "text-xl font-medium text-white transition-colors hover:text-[#8C7246] md:text-2xl"
             : "text-2xl font-semibold text-white transition-colors  md:text-3xl"
-      }`}
+        }`}
     >
       {children}
       {!isSubLink && !isSubHeader}
@@ -149,10 +115,9 @@ const HamburgerButton = ({
         variants={UNDERLAY_VARIANTS}
         style={{ top: 16, right: 16 }}
         className={`fixed z-10 rounded-xl -mt-2  
-          ${
-            active
-              ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
-              : "bg-white/0"
+          ${active
+            ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
+            : "bg-white/0"
           }`}
       />
 
@@ -160,9 +125,8 @@ const HamburgerButton = ({
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${
-          active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
-        }`}
+        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
+          }`}
       >
         <motion.span
           variants={HAMBURGER_VARIANTS.top}
@@ -190,17 +154,7 @@ const HamburgerButton = ({
 const LINKS = [
   {
     title: "About Us",
-    href: "#",
-    subHeaders: [
-      {
-        title: "",
-        href: "#about",
-        links: [
-          { title: "About GCC", href: "/about" },
-          { title: "Board of Directors", href: "/board" },
-        ],
-      },
-    ],
+    href: "/about",
   },
   {
     title: "Group Business",
@@ -208,53 +162,31 @@ const LINKS = [
     subHeaders: [
       {
         title: "Real Estate Development",
-        href: "#",
-        links: [
-          { title: "Nadi by GC City", href: "/nadi" },
-          {
-            title: "GC Orussey",
-            href: "https://gcc-gp.com/en/gc-orussey-market/",
-          },
-          { title: "SOHO Mall", href: "/soho" },
-        ],
+        href: "/real-estate",
       },
       {
         title: "Financial Investment",
-        href: "#",
-        links: [
-          { title: "GC Trust", href: "/trust" },
-          { title: "GC Fund", href: "/fund" },
-        ],
+        href: "/financial-investment",
       },
       {
         title: "Property Management",
-        href: "#",
-        links: [{ title: "GC City", href: "#" }],
+        href: "/property-management",
       },
       {
         title: "Catering & Entertainment",
-        href: "#",
-        links: [
-          { title: "Hong Kong Resturant", href: "/hongkongresturant" },
-          { title: "Luk Hot Pot", href: "/hotpot" },
-          { title: "Singapore Bak Kut Teh", href: "/bakkutteh" },
-          { title: "GC Super", href: "/super" },
-        ],
+        href: "/catering-entertainment",
       },
       {
         title: "Architectural Design",
-        href: "#",
-        links: [{ title: "GC Design", href: "/design" }],
+        href: "/architectural-design",
       },
       {
         title: "Cultural Communication",
-        href: "#",
-        links: [{ title: "GC Media", href: "/media" }],
+        href: "/cultural-communication",
       },
       {
         title: "Charity & Public Welfare",
-        href: "#",
-        links: [{ title: "GC Care", href: "/care" }],
+        href: "/charity-public-welfare",
       },
     ],
   },
@@ -263,12 +195,12 @@ const LINKS = [
     href: "#",
     subHeaders: [
       {
-        title: "",
-        href: "#",
-        links: [
-          { title: "GC Hong Kong", href: "/hongkong" },
-          { title: "GC Japan", href: "/japan" },
-        ],
+        title: "GC Hong Kong",
+        href: "/hongkong",
+      },
+      {
+        title: "GC Japan",
+        href: "/japan",
       },
     ],
   },
