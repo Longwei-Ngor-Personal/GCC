@@ -30,7 +30,6 @@ const Nav = () => {
 const LinksOverlay = () => {
   return (
     <nav className="fixed right-4 top-4 z-40 h-[calc(100vh_-_32px)] w-[calc(100%_-_32px)] overflow-scroll">
-      <h1>Menu</h1>
       <LinksContainer />
     </nav>
   );
