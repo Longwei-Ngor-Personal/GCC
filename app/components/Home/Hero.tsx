@@ -16,7 +16,7 @@ const images = [
 
 const logos = [
   "/home/logobig.png",
-  "/nadi/gcc-logo.png",
+  "/nadi/gcclogo.png",
   "/home/fundlogo.png",
   "/home/trustlogo.png",
   "/home/designlogo.png",
