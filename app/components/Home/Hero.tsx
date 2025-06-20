@@ -6,44 +6,25 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
-  "/home/hero-cropped.png",
-  "/hero.png",
-  "/home/gcfund.webp",
-  "/home/gctrust.webp",
-  "/design/gcdesignbg.avif", // Add more image paths as needed
-  "/home/gcland.webp",
-];
-
-const logos = [
-  "/home/logobig.png",
-  "/nadi/gcclogo.png",
-  "/home/fundlogo.png",
-  "/home/trustlogo.png",
-  "/home/designlogo.png",
-  "/home/landlogo.png", // Add more logo paths as needed
+  "/home/hero.png",
+  "/home/hero2.png",
+  "/home/hero3.png",
+  "/home/hero4.png",
+  "/home/hero5.png", // Add more image paths as needed
 ];
 
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [currentLogoIndex, setCurrentLogoIndex] = useState(0);
 
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1,
-    );
-
-    setCurrentLogoIndex((prevIndex) =>
-      prevIndex === 0 ? logos.length - 1 : prevIndex - 1,
     );
   };
 
   const handleNextClick = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1,
-    );
-
-    setCurrentLogoIndex((prevIndex) =>
-      prevIndex === logos.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
@@ -61,7 +42,7 @@ function Hero() {
         >
           <Image
             src={images[currentImageIndex]}
-            alt="Hero"
+            alt="Logo"
             layout="fill"
             objectFit="cover"
           />
@@ -70,29 +51,12 @@ function Hero() {
 
       {/* Overlay */}
       <div
-        className={`absolute top-0 left-0 w-full h-full bg-black opacity-70 -z-20`}
+        className={`absolute top-0 left-0 w-full h-full bg-black opacity-30 -z-20`}
       />
 
       {/* Content */}
       <div className="w-full h-full ">
         <Header />
-        <div className="w-full h-[80%] flex items-center justify-center -z-10">
-          <motion.div
-            key={currentImageIndex}
-            initial={{ opacity: 0.2 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, ease: "linear" }}
-            className={`relative mt-28 ${currentLogoIndex == 0 ? "w-[600px] h-[600px]" : "w-[500px] h-[500px]"}`}
-          >
-            <Image
-              src={logos[currentLogoIndex]}
-              alt="Logo"
-              layout="fill"
-              objectFit="contain"
-            />
-          </motion.div>
-        </div>
 
         {/* Navigation buttons */}
         <button

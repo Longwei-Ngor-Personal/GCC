@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <nav
-      className={`fixed w-full flex justify-between items-center z-50 py-4 px-4 md:px-16 transition-all duration-300 ${isScrolled ? "bg-white/80 backdrop-blur-md" : ""
+      className={`fixed w-full flex justify-between items-center z-50 py-4 px-4 md:px-16 transition-all duration-300 backdrop-blur-sm ${isScrolled ? "bg-white/80 backdrop-blur-md" : ""
         }`}
     >
       <Link href="/" className="hidden lg:block">
