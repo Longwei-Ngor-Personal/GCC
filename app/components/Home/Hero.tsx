@@ -1,16 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Header from "../Header";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
-  "/home/hero.png",
+  "/home/hero1.png",
   "/home/hero2.png",
   "/home/hero3.png",
   "/home/hero4.png",
-  "/home/hero5.png", // Add more image paths as needed
+  "/home/hero5.png",
+  "/home/hero6.jpg",
 ];
 
 function Hero() {
@@ -18,15 +19,26 @@ function Hero() {
 
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
   const handleNextClick = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  // Auto slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change every 5 seconds
+
+    return () => clearInterval(interval); // Clean up on unmount
+  }, []);
 
   return (
     <div className="relative w-full h-[760px] text-primary">
