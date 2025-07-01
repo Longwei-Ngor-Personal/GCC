@@ -2,12 +2,120 @@ import { MapPin, Phone, Mail, MessageSquare, ArrowRight } from "lucide-react";
 import ContactForm from "../components/ContactUs/Form";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
     <>
       <Header />
       <div className="py-32 min-h-screen bg-gradient-to-b from-gray-50 to-[#F9FAFB]">
+        <div className="w-full bg-[#212C57] mb-12 px-12 pb-12">
+          <div className="w-full flex items-center justify-center">
+            <Image
+              src="/home/logobig.png"
+              alt="logo"
+              width={500}
+              height={500}
+            />
+          </div>
+          <div className="grid md:grid-cols-3 gap-12">
+            <div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/home/khmerflag.png"
+                  alt="flag"
+                  width={80}
+                  height={80}
+                  className="bg-white rounded-full"
+                />
+                <p className="text-white font-bold text-lg tracking-wider">
+                  {" "}
+                  CAMBODIA
+                </p>
+              </div>
+              <p className="text-white text-sm mt-4">
+                #S2-48.49,50, St Preah Monireth, Sangkat Veal Vong, Khan 7
+                Makara, Olympia Mall, Phnom Penh, Cambodia
+              </p>
+              <p className="text-white text-sm mt-2">gcc-gp.com</p>
+            </div>
+            <div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/home/chinaflag.png"
+                  alt="flag"
+                  width={80}
+                  height={80}
+                  className="bg-white rounded-full"
+                />
+                <p className="text-white font-bold text-lg tracking-wider">
+                  CHINA
+                </p>
+              </div>
+              <p className="text-white text-sm mt-4">
+                GCC HK 7/F, Lansing House, 41-47 Queen&apos;s Road Central, Hong
+                Kong
+              </p>
+              <p className="text-white text-sm mt-2">gcc-gp.com</p>
+            </div>
+            <div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/home/japanflag.png"
+                  alt="flag"
+                  width={80}
+                  height={80}
+                />
+                <p className="text-white font-bold text-lg tracking-wider">
+                  JAPAN
+                </p>
+              </div>
+              <p className="text-white text-sm mt-4">
+                GCC Japan Co.,LTd. 14F, Metropolitan Plaza,1-11-1
+                Nishi-Ikebukuro Toshima-Ku, Tokyo, Japan 171-0021
+              </p>
+              <p className="text-white text-sm mt-2">gcc-gp.com</p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 mt-12 md:mt-16 md:ml-20">
+            <div className="flex flex-col md:items-center md:justify-center w-full md:w-2/3">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/nadi/orussey-logo.png"
+                  alt="flag"
+                  width={80}
+                  height={80}
+                  className="bg-white w-20 h-20 rounded-full object-contain"
+                />
+                <p className="text-white font-bold text-lg tracking-wider">
+                  ORUSSEY
+                </p>
+              </div>
+              <p className="text-white text-sm mt-4">
+                Trung Moan Village, Sangkat O Bek Kaom. Khan Sen Sok, Phnom Penh
+                Cambodia.
+              </p>
+            </div>
+            <div className="flex flex-col md:items-center justify-center w-full md:w-2/3 mt-12 md:mt-0">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/nadi/logo-name.png"
+                  alt="flag"
+                  width={80}
+                  height={80}
+                  className="bg-white w-20 h-20 p-2 rounded-full"
+                />
+                <p className="text-white font-bold text-lg tracking-wider">
+                  BOREY NADI BY GC CITY
+                </p>
+              </div>
+              <p className="text-white text-sm mt-4">
+                National Highway 6, Khtor Village, Phum Preaek Lieb, Sangkat
+                Prek Leap, Chroy Changvar, Phnom Penh, Cambodia
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="container mx-auto py-16 px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
             {/* Header Section */}
