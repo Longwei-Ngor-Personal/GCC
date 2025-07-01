@@ -3,20 +3,20 @@ import React from "react";
 function FundAbout() {
   return (
     <section id="about" className="py-24 px-4 ">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="max-w-2xl mx-auto text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-          GC Fund: Cambodian Property and Financial Investment Management
-        </h2>
+      <div className="max-w-5xl mx-auto text-justify">
         <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-          GC Fund is a financial company managing large assets. With elite
-          professionals and vivid professional knowledge, it provides clients
-          Cambodian property and financial investment management. Currently, the
-          group is managing assets worth US $500 million. It is one of the most
-          decisive financial companies in the country. Since it was founded, GC
-          Fund provides clients with unique and elite service. It became a
-          financial company with huge potential. Financial and property markets
-          change. We will provide diversified service to take care of unique
-          needs of every single client in the future.
+          GC Fund Cambodia is a financial company that manages huge assets. With
+          excellent professionals and rich professional knowledge, it mainly
+          provides clients with Cambodian real estate and financial investment
+          management. Currently, the group manages assets of approximately US $
+          500 million and is one of the most important financial institutions in
+          the local area. Since its establishment, in the ever-changing business
+          market, GC Fund has provided customers with unique and excellent
+          services, developed into a financial institution with great potential,
+          and is committed to achieving the best returns for investors. In the
+          future, the group will continue to develop more diversified investment
+          services and provide more options to cater to the unique needs of each
+          customer.
         </p>
       </div>
     </section>

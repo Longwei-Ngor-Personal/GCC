@@ -4,7 +4,7 @@ function LandGallery() {
   return (
     <section id="gallery" className="pt-20 pb-14 bg-[#F3F4F6]">
       <div className="container mx-auto px-4">
-        <div className="space-y-2 flex flex-col items-center justify-center">
+        {/* <div className="space-y-2 flex flex-col items-center justify-center">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
             Project Planning and Development Overview
           </h2>
@@ -25,7 +25,7 @@ function LandGallery() {
             main roads, branch roads, drainage systems, and electrical
             infrastructure to support land development.{" "}
           </p>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           <div className="aspect-square relative group overflow-hidden">

@@ -6,39 +6,32 @@ function FundBackground() {
       <div className="container mx-auto px-4">
         <div className="lg:grid grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Cambodia&apos;s Economy and Investment Opportunities{" "}
-            </h2>
-            <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-              Cambodia&apos;s economy is skyrocketing. Its average GDP growth
-              rate hit 7% for 7 consecutive years, the highest in ASEAN in 2019.
-              Its industry chain is also skyrocketing, from textiles to
-              electronics and vehicle parts. Cambodia became the new
-              &ldquo;Asian Tiger.&rdquo;
+            <Image
+              src="/home/fundlogo.png"
+              alt="logo"
+              width={300}
+              height={300}
+            />
+            <p className="md:text-lg text-gray-700 leading-relaxed my-6">
+              Cambodia&apos;s economy is growing rapidly, with an average GDP
+              growth rate of 7% for seven consecutive years. Its industrial
+              chain has also risen rapidly, from garments to electronics and
+              auto parts, becoming the new &ldquo;Asian Tiger&rdquo;. Since
+              joining the WTO in 2004, the poverty rate has dropped rapidly from
+              53.2% to around 10%. In order to strengthen foreign investment,
+              the government has released preferential policies such as 100%
+              foreign ownership and a 9- year tax exemption period, which has
+              enabled foreign investment to actively invest in finance, real
+              estate, manufacturing and telecommunications.
             </p>
-            <div className="grid grid-cols-2 gap-8 mt-4">
-              <div>
-                <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 leading-tight">
-                  Economic Growth
-                </h3>
-                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                  Since entering the WTO in 2004, Cambodia&apos;s poverty rate
-                  dropped sharply from 53.2% to 10%. This rapid reduction
-                  reflects significant economic improvement.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 leading-tight">
-                  Attracting Foreign Investment
-                </h3>
-                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                  To attract foreign investment, the Cambodian government
-                  provides preferential policies, including 100% ownership
-                  release and tax-free periods. This attracts capital into
-                  finance, property, manufacturing, and telecommunication.
-                </p>
-              </div>
-            </div>
+            <p className="md:text-lg text-gray-700 leading-relaxed ">
+              GC Fund has gained the trust of many clients with its strong
+              investment network and ability to lead the market in Cambodia. The
+              fund products it serves include Cambodia Real Estate Management
+              Investment Special Fund and Cambodia Real Estate Development Fund.
+              All of the above products are entrusted to an independent third
+              party in Hong Kong as the project manager.
+            </p>
           </div>
           <div className="w-full flex items-center justify-center mt-5 lg:mt-0">
             <Image

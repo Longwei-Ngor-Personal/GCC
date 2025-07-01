@@ -13,10 +13,13 @@ function LandAbout() {
             className="w-full h-[600px] object-cover hidden lg:block "
           />
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              GC Land
-            </h2>
-            <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
+            <Image
+              src="/home/landlogo.png"
+              alt="logo"
+              width={300}
+              height={300}
+            />
+            <p className="md:text-lg text-gray-700 leading-relaxed my-6">
               GC land is one of the brands under GCC. It is a primary land
               developer. Land is a precious resource and also a cornerstone of
               the company. It is very challenging for primary land developer to
