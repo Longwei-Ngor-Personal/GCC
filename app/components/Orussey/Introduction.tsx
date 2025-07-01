@@ -7,7 +7,7 @@ function IntroductionOrussey() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
           <div className="relative w-full h-full">
             <Image
               src="/nadi/orussey-about.jpeg"
@@ -27,7 +27,7 @@ function IntroductionOrussey() {
               <h1 className="text-4xl font-medium">GC ORUSSEY MARKET</h1>
             </div>
             <p className="text-lg text-gray-600 text-justify">
-              GC Ousi Market is a real estate development project carefully
+              GC Orussey Market is a real estate development project carefully
               built by GCC Group, which uses the wisdom of Khmer architecture
               and integrates the contemporary Cambodian traditional wholesale
               market. Located on Russian Federation Avenue, only three minutes

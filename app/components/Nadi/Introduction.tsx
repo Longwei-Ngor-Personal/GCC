@@ -16,8 +16,8 @@ function Introduction() {
           promotion of innovation and high-quality architectural aesthetics to
           create a beautiful city that people can feel at ease in.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-20">
-          <div className="relative w-full h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
+          <div className="relative w-full h-[350px] lg:h-full order-2 lg:order-1">
             <iframe
               src="https://www.youtube-nocookie.com/embed/rVY0aFvNvX8"
               title="Company Introduction Video"
@@ -26,7 +26,7 @@ function Introduction() {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6 order-1 lg:order-2">
             <div className="flex items-center gap-6">
               <Image
                 src="/nadi/logo-name.png"
