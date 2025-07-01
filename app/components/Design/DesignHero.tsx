@@ -1,44 +1,69 @@
-import Link from "next/link";
 import Header from "../Header";
 import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 -z-20">
-        <Image
-          src="/design/gcdesignbg.avif"
-          width={1920}
-          height={1080}
-          alt="GC CITY NADI Landscape"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
-      </div>
-      <div className="absolute inset-0 w-full h-full text-primary">
-        <Header />
-      </div>
-      <div className="relative -z-10 container mx-auto px-4 text-center text-primary">
-        <Image
-          src="/home/designlogo.png"
-          width={1920}
-          height={1080}
-          alt="GC Design Logo"
-          className="w-[500px] h-[150px] mx-auto mb-4"
-        />
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          We sculpture design into our clients&apos; dreams, creating ideal
-          environments for both commercial and residential spaces.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Link
-            href="#"
-            className="inline-flex h-12 items-center justify-center text-gray-50 rounded-md bg-primary px-6 font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-          >
-            View our Projects
-          </Link>
+    <>
+      <Header />
+      <div className="py-32 px-6 md:px-16">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="relative">
+            <Image
+              src="/design/abt1.jpg"
+              alt="abt"
+              width={1920}
+              height={1080}
+              className="w-full md:h-[950px] lg:h-[1000px] object-cover"
+            />
+            <div className="absolute hidden w-36 h-full bg-[#823E16] top-0 left-0 text-white text-center font-medium text-2xl md:flex items-center justify-center">
+              <h1>Achitectural Design</h1>
+            </div>
+          </div>
+          <div className="w-full">
+            <p className="text-lg text-gray-600 text-justify">
+              Our Architecture & Construction Department is composed of
+              professionals from various countries, offering an integrated,
+              end-to-end service that covers construction engineering, planning
+              and design. building development, and after-sales repair and
+              maintenance. By combining the unique strengths and extensive
+              experience of our team members, we tailor customized designs and
+              styles that meet each client&apos;s specific needs, both inside
+              and out, to create a personalized living experience.
+            </p>
+            <p className="text-lg text-gray-600 text-justify mt-2">
+              Guided by the principles of &apos;Service, Safety, Quality,
+              Efficiency, and Innovation.&apos; we approach every project with
+              care and commitment. We always stand from the residents
+              perspective. striving to create spaces where every client feels
+              secure and at home turning their vision of an ideal residence into
+              reality.
+            </p>
+            <div className="grid grid-cols-2 gap-2 mt-6">
+              <Image
+                src="/design/abt2.jpg"
+                alt="abt"
+                width={1920}
+                height={1080}
+                className="w-full h-[300px] object-cover"
+              />
+              <Image
+                src="/design/abt3.jpg"
+                alt="abt"
+                width={1920}
+                height={1080}
+                className="w-full h-[300px] object-cover"
+              />
+            </div>
+            <Image
+              src="/design/abt4.jpg"
+              alt="abt"
+              width={1920}
+              height={1080}
+              className="w-full h-[320px] object-cover object-top mt-2 block md:hidden lg:block"
+            />
+          </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }

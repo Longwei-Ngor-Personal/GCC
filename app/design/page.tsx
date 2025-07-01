@@ -1,5 +1,4 @@
 import React from "react";
-import AboutDesign from "../components/Design/DesignAbout";
 import DesignHero from "../components/Design/DesignHero";
 import DesignServices from "../components/Design/DesignServices";
 import DesignManagement from "../components/Design/DesignManagement";
@@ -10,7 +9,6 @@ function DesignPage() {
   return (
     <>
       <DesignHero />
-      <AboutDesign />
       <DesignServices />
       <DesignManagement />
       <DesignProjects />
