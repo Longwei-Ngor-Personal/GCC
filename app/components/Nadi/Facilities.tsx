@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 function Facilities() {
   return (
-    <div className="text-primary pt-20">
+    <div className="text-primary">
       <Example />
     </div>
   );

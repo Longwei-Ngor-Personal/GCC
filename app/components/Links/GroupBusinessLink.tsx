@@ -53,7 +53,7 @@ const AboutUsContent = () => {
   const categories = [
     { title: "Real Estate Development", href: "/nadi" },
     { title: "Financial Investment", href: "/trust" },
-    { title: "Property Management", href: "/land" },
+    { title: "Property Management", href: "/property" },
     { title: "Catering & Entertainment", href: "/hotpot" },
     { title: "Architectural Design", href: "/design" },
     { title: "Cultural Communication", href: "/media" },

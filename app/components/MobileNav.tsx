@@ -86,12 +86,13 @@ const NavLink = ({
           onClick();
         }
       }}
-      className={`block cursor-pointer  ${isSubLink
+      className={`block cursor-pointer  ${
+        isSubLink
           ? "text-base font-normal text-white transition-colors hover:text-[#8C7246] md:text-lg hover:underline"
           : isSubHeader
-            ? "text-xl font-medium text-white transition-colors hover:text-[#8C7246] md:text-2xl"
-            : "text-2xl font-semibold text-white transition-colors  md:text-3xl"
-        }`}
+          ? "text-xl font-medium text-white transition-colors hover:text-[#8C7246] md:text-2xl"
+          : "text-2xl font-semibold text-white transition-colors  md:text-3xl"
+      }`}
     >
       {children}
       {!isSubLink && !isSubHeader}
@@ -114,9 +115,10 @@ const HamburgerButton = ({
         variants={UNDERLAY_VARIANTS}
         style={{ top: 16, right: 16 }}
         className={`fixed z-10 rounded-xl -mt-2  
-          ${active
-            ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
-            : "bg-white/0"
+          ${
+            active
+              ? "bg-gradient-to-br from-[#D6B072] to-[#B08E5C]"
+              : "bg-white/0"
           }`}
       />
 
@@ -124,8 +126,9 @@ const HamburgerButton = ({
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
-          }`}
+        className={`group fixed right-4 top-2 z-50 h-12 w-12 bg-white/0 transition-all hover:bg-white/20 ${
+          active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
+        }`}
       >
         <motion.span
           variants={HAMBURGER_VARIANTS.top}
@@ -161,31 +164,31 @@ const LINKS = [
     subHeaders: [
       {
         title: "Real Estate Development",
-        href: "/real-estate",
+        href: "/nadi",
       },
       {
         title: "Financial Investment",
-        href: "/financial-investment",
+        href: "/trust",
       },
       {
         title: "Property Management",
-        href: "/property-management",
+        href: "/property",
       },
       {
         title: "Catering & Entertainment",
-        href: "/catering-entertainment",
+        href: "/hotpot",
       },
       {
         title: "Architectural Design",
-        href: "/architectural-design",
+        href: "/design",
       },
       {
         title: "Cultural Communication",
-        href: "/cultural-communication",
+        href: "/media",
       },
       {
         title: "Charity & Public Welfare",
-        href: "/charity-public-welfare",
+        href: "/care",
       },
     ],
   },

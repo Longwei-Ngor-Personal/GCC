@@ -1,31 +1,23 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 function Introduction() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Introducing NADI by GC
-            </h2>
-            <p className="text-lg text-gray-600">
-              The project is named “NADI,” it aims to pay respect to Mekong
-              river and Tonle Sap river. GC City connects different areas in the
-              project with boulevard, using large area of greenery space and
-              water garden to create an elegant environment where water and sky
-              merge together. We also combine with the contemporary design
-              architect, sculpture the prestigious living space, create an
-              iconic and high-quality comfortable living experience.
-            </p>
-            <p className="text-lg text-gray-600">
-              It is the rare gem in the city. Surrounded by 32-hectare secluded
-              greenery and waterway design, is the key element of NADI.
-            </p>
-          </div>
-          <div className="relative aspect-video">
+        <p className="text-lg text-gray-600">
+          Cambodia is a country full of business opportunities and youthful
+          energy. In the past 10 years, foreign investment in Cambodia has
+          increased by more than 800%, and the economic potential is huge.
+          Golden Cambodia Century Group saw this rare golden period and was
+          founded and entered the Cambodian market in 2015, adhering to the
+          promotion of innovation and high-quality architectural aesthetics to
+          create a beautiful city that people can feel at ease in.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-20">
+          <div className="relative w-full h-full">
             <iframe
               src="https://www.youtube-nocookie.com/embed/rVY0aFvNvX8"
               title="Company Introduction Video"
@@ -33,6 +25,34 @@ function Introduction() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+          </div>
+          <div className="space-y-6">
+            <div className="flex items-center gap-6">
+              <Image
+                src="/nadi/logo-name.png"
+                alt="logo"
+                width={100}
+                height={100}
+              />
+              <h1 className="text-4xl font-medium">BOERY NADI BY GC CITY</h1>
+            </div>
+            <p className="text-lg text-gray-600 text-justify">
+              Located in the Chrysanthemum District of Phnom Penh, the capital
+              of Cambodia, GC CITY • Hong An is a 34- hectare project ( 3 phases
+              in total ) large-scale high-end residential community that GC CITY
+              Century Group has focused on developing. GC CITY connects all
+              areas of the project with tree-lined avenues, and uses large areas
+              of green space and flowing water gardens to create an elegant
+              environment where the sky and water blend into one. We also
+              combine contemporary design and architectural style to depict
+              fashionable and distinguished living spaces, creating a symbolic,
+              high-quality and comfortable living experience. It is a rare
+              treasure that is unique in the city. Surrounded by quiet and
+              serene gardens and waterway design is a major element of NADI. The
+              luxury master-planned villa community conceived and created by GC
+              CITY combines a signature combination of residential commercial,
+              leisure and park facilities.
+            </p>
           </div>
         </div>
       </div>

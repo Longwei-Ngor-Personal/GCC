@@ -4,8 +4,8 @@ import React from "react";
 function Information() {
   return (
     <div className="px-4 md:px-16 py-20">
-      <div className="container w-full flex items-center justify-center gap-6">
-        <div className="w-full space-y-5 mr-16">
+      <div className="container w-full flex flex-col-reverse md:flex-row items-center justify-center gap-6">
+        <div className="w-full space-y-5 md:mr-16">
           <p>
             Golden Cambodia Century Group is Cambodia&apos;s most diversified
             international conglomerate, with business operations spanning across
@@ -36,15 +36,15 @@ function Information() {
             living experience for the Cambodian people.
           </p>
         </div>
-        <div className="w-2/3 relative">
+        <div className="md:w-2/3 relative">
           <Image
             src="/hongkong/hongkong.avif"
             alt="about"
             width={1080}
             height={1920}
-            className="w-full h-[700px] object-cover"
+            className="w-full h-[400px] md:h-[700px] object-cover"
           />
-          <div className="w-14 h-40 bg-[#1F2C57] absolute top-10 -left-14 shadow-2xl shadow-black text-primary font-medium text-center flex items-center justify-center">
+          <div className="hidden md:flex w-14 h-40 bg-[#1F2C57] absolute top-10 -left-14 shadow-2xl shadow-black text-primary font-medium text-center items-center justify-center">
             <p>About Us</p>
           </div>
         </div>
@@ -60,7 +60,7 @@ function Information() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-45 " />
           <div className="z-50">
-            <h2 className="absolute top-16 left-5 md:left-14 w-full h-full text-lg lg:text-2xl font-semibold">
+            <h2 className="absolute top-16 left-5 md:left-14 w-full h-full text-lg md:text-4xl font-semibold">
               Coporate Vision
             </h2>
             <p className="absolute top-28 left-5 md:left-14 w-[80%] md:w-1/2 h-full lg:text-lg font-medium ">
@@ -73,7 +73,7 @@ function Information() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-10">
+        <div className="flex flex-col md:flex-row items-center gap-10">
           <Image
             src="/about/teamm.jpg"
             alt="team"
@@ -82,7 +82,7 @@ function Information() {
             className="aspect-square object-cover"
           />
           <div className="w-full">
-            <h2 className="text-lg lg:text-2xl font-semibold">
+            <h2 className="text-lg md:text-4xl font-semibold">
               Coporate Mission
             </h2>
             <p className="mt-4">
