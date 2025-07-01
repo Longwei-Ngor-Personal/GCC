@@ -1,5 +1,4 @@
 import Footer from "../components/Footer";
-import MediaAbout from "../components/Media/MediaAbout";
 import MediaAdvertisement from "../components/Media/MediaAdvertisement";
 import MediaAmbassadors from "../components/Media/MediaAmbassadors";
 import MediaBackground from "../components/Media/MediaBackground";
@@ -14,7 +13,6 @@ function MediaPage() {
   return (
     <>
       <MediaHero />
-      <MediaAbout />
       <MediaStrengths />
       <MediaBackground />
       <MediaPhotography />
