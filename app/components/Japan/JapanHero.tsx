@@ -1,37 +1,64 @@
-import Link from "next/link";
-import Header from "../Header";
 import Image from "next/image";
 
 export default function JapanHero() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 -z-20">
+    <section className="container mx-auto pt-32">
+      <div className="grid grid-cols-2 gap-4">
         <Image
-          src="/japan/tokyo.jpg"
-          width={1920}
-          height={1080}
-          alt="GC CITY NADI Landscape"
-          className="w-full h-full object-cover"
+          src="/japan/tokyo.avif"
+          alt="hongkong"
+          width={1000}
+          height={1000}
+          className="h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
-      </div>
-      <div className="absolute inset-0 w-full h-full text-primary">
-        <Header />
-      </div>
-      <div className="relative -z-10 container mx-auto px-4 text-center text-primary">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-          JAPAN: GCC-Japan Headquarter
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Your trusted partner for Cambodian real estate investment in Japan
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <Link
-            href="#"
-            className="inline-flex h-12 w-64 items-center justify-center text-gray-50 rounded-md bg-primary px-6 font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-          >
-            Visit Our Official Website
-          </Link>
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">GCC JAPAN</h1>
+          <p className="text-gray-600 mb-4 leading-relaxed md:text-lg">
+            Our core business focuses on the promotion and sales of Cambodian
+            real estate projects in Japan. We also assist Japanese developers in
+            entering the Cambodian property market and offer consulting services
+            related to Cambodian law and other sectors. Leveraging our deep
+            expertise in Cambodia&apos;s financial and real estate sectors, we
+            help Japanese clients gain a comprehensive understanding of the
+            local market by providing professional, timely, and trustworthy
+            investment insights.
+          </p>
+          <p className="text-gray-600 mb-6 leading-relaxed md:text-lg">
+            We are committed to offering high-quality products and market
+            information, tailored to a wide range of segments— from affordable
+            to luxury— ensuring a seamless, reliable, and convenient one-stop
+            service for our Japanese clientele.
+          </p>
+          <div className="grid grid-cols-2 gap-4 mt-4">
+            <Image
+              src="/japan/showcase6.jpg"
+              alt="japan"
+              width={1000}
+              height={1000}
+              className="h-full"
+            />
+            <Image
+              src="/japan/showcase5.jpg"
+              alt="japan"
+              width={1000}
+              height={1000}
+              className="h-full"
+            />
+            <Image
+              src="/japan/group2.jpg"
+              alt="japan"
+              width={1000}
+              height={1000}
+              className="h-[300px] object-cover"
+            />
+            <Image
+              src="/japan/2.jpg"
+              alt="japan"
+              width={1000}
+              height={1000}
+              className="h-[300px] object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>

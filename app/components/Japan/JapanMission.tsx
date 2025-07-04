@@ -11,7 +11,7 @@ function JapanMission() {
 
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
-            <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative h-64 md:h-80 w-full  overflow-hidden shadow-lg">
               <Image
                 src="/japan/fuji2.jpeg"
                 alt="GCC Japan Mission"

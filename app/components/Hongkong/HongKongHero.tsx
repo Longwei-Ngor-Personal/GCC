@@ -1,41 +1,68 @@
 import Image from "next/image";
 import React from "react";
 import Header from "../Header";
-import Link from "next/link";
 
 function HongKongHero() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 -z-20">
-        <Image
-          src="/hongkong/hongkong.avif"
-          width={1920}
-          height={1080}
-          alt="GC CITY NADI Landscape"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
-      </div>
-      <div className="absolute inset-0 w-full h-full text-primary">
-        <Header />
-      </div>
-      <div className="relative -z-10 container mx-auto px-4 text-center text-primary">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-          GCC - Hong Kong Headquarter
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Your trusted partner for Cambodian real estate investment in Hong Kong
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <Link
-            href="#"
-            className="inline-flex h-12 w-64 items-center justify-center text-gray-50 rounded-md bg-primary px-6 font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-          >
-            Visit Our Official Website
-          </Link>
+    <>
+      <Header />
+      <section className="container mx-auto pt-32">
+        <div className="grid grid-cols-2 gap-4">
+          <Image
+            src="/hongkong/hongkong.avif"
+            alt="hongkong"
+            width={1000}
+            height={1000}
+            className="h-full object-cover"
+          />
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">
+              GCC HONG KONG
+            </h1>
+            <p className="text-gray-600 mb-4 leading-relaxed md:text-lg">
+              Golden Cambodia Century (GCC) - Hong Kong Headquarters was
+              established in late 2020 in Central, the heart of Hong Kong&apos;s
+              commercial district. Upholding the Group&apos;s philosophy of
+              &ldquo;One For All, All For One&rdquo; our goal is to build a
+              strategic platform in Hong Kong and serve as the Group&apos;s key
+              liaison for sustainable development in the region.
+            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed md:text-lg">
+              Our mission is to provide comprehensive services and support to
+              partners, agents, investors, and buyers in Hong Kong. We regularly
+              organize exhibitions and seminars, proactively responding to
+              client needs. We are committed to collaborating with every company
+              and individual interested in developing in . Cambodia-working
+              together to seize local opportunities and shape a promising
+              future.
+            </p>
+            <Image
+              src="/hongkong/2.jpg"
+              alt="hongkong"
+              width={1000}
+              height={1000}
+              className="h-[300px] object-cover"
+            />
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              <Image
+                src="/hongkong/23.jpg"
+                alt="hongkong"
+                width={1000}
+                height={1000}
+                className="h-full object-cover"
+              />
+              <Image
+                src="/hongkong/4.jpg"
+                alt="hongkong"
+                width={1000}
+                height={1000}
+                className="h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

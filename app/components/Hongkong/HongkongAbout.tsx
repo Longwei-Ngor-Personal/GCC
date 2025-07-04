@@ -13,7 +13,7 @@ function HongkongAbout() {
         <div className="flex flex-col md:flex-row-reverse items-start mb-20">
           <div className="w-full md:w-1/2 md:mb-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-80 w-full">
                 <Image
                   src="/hongkong/1.jpg"
                   alt="GCC Japan Office 1"
@@ -21,7 +21,7 @@ function HongkongAbout() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-80 w-full">
                 <Image
                   src="/hongkong/5.jpg"
                   alt="GCC Japan Office 2"
@@ -59,7 +59,7 @@ function HongkongAbout() {
               various fields.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-80 w-full">
                 <Image
                   src="/hongkong/7.jpg"
                   alt="GCC Japan Office 1"
@@ -67,7 +67,7 @@ function HongkongAbout() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-80 w-full">
                 <Image
                   src="/hongkong/8.jpg"
                   alt="GCC Japan Office 2"

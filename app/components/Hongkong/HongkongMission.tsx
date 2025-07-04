@@ -24,7 +24,7 @@ function HongkongMission() {
             </p>
           </div>
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
-            <div className="relative h-64 md:h-64 w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative h-64 md:h-64 w-full">
               <Image
                 src="/hongkong/hero.jpg"
                 alt="GCC Japan Mission"

@@ -194,17 +194,7 @@ const LINKS = [
   },
   {
     title: "Oversea Branches",
-    href: "#",
-    subHeaders: [
-      {
-        title: "GC Hong Kong",
-        href: "/hongkong",
-      },
-      {
-        title: "GC Japan",
-        href: "/japan",
-      },
-    ],
+    href: "/hongkong",
   },
   {
     title: "Investment Q&A",

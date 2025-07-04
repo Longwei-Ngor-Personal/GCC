@@ -55,7 +55,7 @@ const TestimonialList = ({
         return (
           <div
             key={t.id}
-            className="shrink-0 w-[400px] rounded-lg overflow-hidden relative"
+            className="shrink-0 w-[400px] overflow-hidden relative"
           >
             <Image
               src={t.img}

@@ -22,7 +22,7 @@ function JapanAbout() {
               various fields.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 w-full overflow-hidden shadow-lg">
                 <Image
                   src="/japan/showcase1.jpg"
                   alt="GCC Japan Office 1"
@@ -30,7 +30,7 @@ function JapanAbout() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 w-full overflow-hidden shadow-lg">
                 <Image
                   src="/japan/showcase2.jpg"
                   alt="GCC Japan Office 2"
@@ -38,7 +38,7 @@ function JapanAbout() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 w-full overflow-hidden shadow-lg">
                 <Image
                   src="/japan/showcase3.jpg"
                   alt="GCC Japan Office 3"
@@ -75,7 +75,7 @@ function JapanAbout() {
         <div className="flex flex-col md:flex-row-reverse items-center">
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 w-full overflow-hidden shadow-lg">
                 <Image
                   src="/japan/showcase4.jpg"
                   alt="GCC Japan Office 1"
@@ -83,7 +83,7 @@ function JapanAbout() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 w-full overflow-hidden shadow-lg">
                 <Image
                   src="/japan/showcase5.jpg"
                   alt="GCC Japan Office 2"
@@ -91,7 +91,7 @@ function JapanAbout() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-96 w-full overflow-hidden shadow-lg">
                 <Image
                   src="/japan/showcase6.jpg"
                   alt="GCC Japan Office 3"
