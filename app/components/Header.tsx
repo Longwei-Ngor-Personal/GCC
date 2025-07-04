@@ -24,8 +24,9 @@ function Header() {
 
   return (
     <nav
-      className={`fixed w-full flex justify-between items-center z-50 py-4 px-4 md:px-16 transition-all duration-300 backdrop-blur-sm ${isScrolled ? "bg-white/80 backdrop-blur-md" : ""
-        }`}
+      className={`fixed w-full flex justify-between items-center z-50 py-4 px-4 md:px-16 transition-all duration-300 backdrop-blur-sm ${
+        isScrolled ? "bg-white/80 backdrop-blur-md" : ""
+      }`}
     >
       <Link href="/" className="hidden lg:block">
         <Image src="/home/gcc-logo.png" alt="Logo" width={250} height={100} />
@@ -36,11 +37,10 @@ function Header() {
       <div className="absolute top-0 right-0 lg:hidden">
         <MobileNav />
       </div>
-      <div className="hidden lg:flex items-center space-x-6 font-medium">
+      <div className="relative hidden lg:flex items-center space-x-6 font-medium">
         <AboutUsLink />
         <GroupBusinessLink />
         <OverseaBrandsLink />
-        {/* <InformationLink /> */}
         <InvestmentQALink />
         <SocialResponsibilityLink />
         <section className="grid place-content-center">
@@ -53,6 +53,17 @@ function Header() {
             </button>
           </Link>
         </section>
+        <div
+          id="language"
+          className="absolute -top-7 right-36 text-xs flex gap-[1px]"
+        >
+          <button id="eng-btn" className="p-2 bg-primary text-white">
+            ENG
+          </button>
+          <button id="chinese-btn" className="p-2 bg-primary text-white">
+            中文
+          </button>
+        </div>
       </div>
     </nav>
   );
