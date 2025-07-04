@@ -3,18 +3,11 @@ import React from "react";
 
 function HotpotEnvironment() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-          Our Environment
-        </h2>
-
+    <section className="mt-4 px-4 md:px-0">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div
-              key={item}
-              className="overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-            >
+            <div key={item} className="overflow-hidden">
               <Image
                 src={`/hotpot/vip${item}.jpg`}
                 alt={`Restaurant interior ${item}`}
