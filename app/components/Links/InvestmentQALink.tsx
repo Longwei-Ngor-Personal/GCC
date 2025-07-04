@@ -12,7 +12,7 @@ const InvestmentQALink = () => {
       className="relative h-fit w-fit"
     >
       <a href="/investmentqa" className="relative font-bold">
-        Investment QA
+        Activities
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",
