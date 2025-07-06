@@ -11,7 +11,7 @@ const OverseaBrandsLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit"
     >
-      <a href="/hongkong" className="relative font-bold">
+      <a href="/hongkong" className="relative text-sm font-bold">
         Oversea Branches
         <span
           style={{

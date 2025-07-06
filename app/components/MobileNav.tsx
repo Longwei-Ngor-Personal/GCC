@@ -175,7 +175,7 @@ const LINKS = [
         href: "/property",
       },
       {
-        title: "Catering & Entertainment",
+        title: "F&B Entertainment",
         href: "/hotpot",
       },
       {
@@ -183,7 +183,7 @@ const LINKS = [
         href: "/design",
       },
       {
-        title: "Cultural Communication",
+        title: "Cultural Popularization",
         href: "/media",
       },
       {
@@ -197,7 +197,7 @@ const LINKS = [
     href: "/hongkong",
   },
   {
-    title: "Investment Q&A",
+    title: "Government Cooperation Activities",
     href: "/investmentqa",
   },
   {

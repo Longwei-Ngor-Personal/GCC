@@ -11,8 +11,8 @@ const InvestmentQALink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit"
     >
-      <a href="/investmentqa" className="relative font-bold">
-        Activities
+      <a href="/investmentqa" className="relative text-sm font-bold">
+        Government Cooperation Activities
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",

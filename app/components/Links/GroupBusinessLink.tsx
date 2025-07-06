@@ -12,7 +12,7 @@ const GroupBusinessLink = () => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit z-50"
     >
-      <a href="#" className="relative font-bold">
+      <a href="#" className="relative text-sm font-bold">
         Group Businesses
         <span
           style={{
@@ -54,16 +54,16 @@ const AboutUsContent = () => {
     { title: "Real Estate Development", href: "/nadi" },
     { title: "Financial Investment", href: "/trust" },
     { title: "Property Management", href: "/property" },
-    { title: "Catering & Entertainment", href: "/hotpot" },
+    { title: "F&B Entertainments", href: "/hotpot" },
     { title: "Architectural Design", href: "/design" },
-    { title: "Cultural Communication", href: "/media" },
+    { title: "Cultural Popularization", href: "/media" },
     { title: "Charity & Public Welfare", href: "/care" },
   ];
 
   return (
     <div className="grid w-full grid-cols-1 shadow-xl lg:w-[300px]">
       <div className="col-span-12 gap-4 bg-primary p-6 text-white">
-        <div className="space-y-3">
+        <div className="space-y-3 text-sm">
           {categories.map((category, index) => (
             <CategoryDropdown
               key={index}

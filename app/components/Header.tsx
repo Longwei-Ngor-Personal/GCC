@@ -37,7 +37,7 @@ function Header() {
       <div className="absolute top-0 right-0 lg:hidden">
         <MobileNav />
       </div>
-      <div className="relative hidden lg:flex items-center space-x-6 font-medium">
+      <div className="relative hidden lg:flex items-center space-x-4 font-medium">
         <AboutUsLink />
         <GroupBusinessLink />
         <OverseaBrandsLink />
@@ -49,7 +49,7 @@ function Header() {
               <span className="rounded-full bg-primary p-1 text-sm transition-colors duration-300 group-hover:bg-neutral-primary">
                 <FiArrowRight className="-translate-x-[200%] text-[0px] transition-all duration-300 group-hover:translate-x-0 group-hover:text-lg group-hover:text-white group-active:-rotate-45" />
               </span>
-              <span>Contact Us</span>
+              <span className="text-sm">Contact Us</span>
             </button>
           </Link>
         </section>

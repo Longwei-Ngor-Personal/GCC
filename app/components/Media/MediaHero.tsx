@@ -33,39 +33,55 @@ function MediaHero() {
               promote their products, fulfill business owners branding needs,
               and create influential content that enhances brand value
             </p>
-            <div className="grid grid-cols-2 gap-2 mt-6">
+            <div className="grid grid-cols-5 gap-2 mt-6">
+              <div className="col-span-2">
+                <Image
+                  src="/media/3.jpg"
+                  alt="abt"
+                  width={1920}
+                  height={1080}
+                  className="w-full h-[150px] object-cover"
+                />
+                <Image
+                  src="/media/4.jpg"
+                  alt="abt"
+                  width={1920}
+                  height={1080}
+                  className="w-full h-[150px] object-cover"
+                />
+              </div>
               <Image
-                src="/media/img3.jpg"
+                src="/media/2.jpg"
                 alt="abt"
                 width={1920}
                 height={1080}
-                className="w-full h-[300px] object-cover"
+                className="w-full h-[300px] object-cover col-span-3"
               />
               <Image
-                src="/media/img2.jpg"
+                src="/media/5.jpg"
                 alt="abt"
                 width={1920}
                 height={1080}
-                className="w-full h-[300px] object-cover"
+                className="w-full h-[300px] object-cover col-span-3"
+              />
+              <Image
+                src="/media/6.jpg"
+                alt="abt"
+                width={1920}
+                height={1080}
+                className="w-full h-[300px] object-cover col-span-2"
               />
             </div>
-            <Image
-              src="/media/img4.jpg"
-              alt="abt"
-              width={1920}
-              height={1080}
-              className="w-full h-[320px] object-cover  mt-2 block md:hidden lg:block"
-            />
           </div>
-          <div className="relative">
+          <div className="relative hidden md:block">
             <Image
-              src="/media/photography1.jpg"
+              src="/media/1.jpg"
               alt="abt"
               width={1920}
               height={1080}
-              className="w-full md:h-[1000px] lg:h-[1070px] object-cover"
+              className="w-full md:h-[1300px] lg:h-[1050px] object-cover object-left"
             />
-            <div className="absolute hidden w-44 h-full bg-[#823E16] top-0 right-0 text-white text-center font-medium text-2xl md:flex items-center justify-center">
+            <div className="absolute hidden w-32 lg:w-44 h-full bg-[#471D88] top-0 right-0 text-white text-center font-medium text-lg lg:text-2xl md:flex items-center justify-center">
               <h1>Cultural Popularization</h1>
             </div>
           </div>
