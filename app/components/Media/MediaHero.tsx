@@ -75,7 +75,7 @@ function MediaHero() {
           </div>
           <div className="relative hidden md:block">
             <Image
-              src="/media/1.jpg"
+              src="/media/hero.jpg"
               alt="abt"
               width={1920}
               height={1080}
