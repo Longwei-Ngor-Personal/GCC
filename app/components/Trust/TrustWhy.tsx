@@ -114,7 +114,7 @@ function TrustWhy() {
       <div className="px-4 md:px-16 mt-14">
         <div className="flex items-center justify-center space-y-4 text-center mb-10">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-            Why use a trust ?
+            Study Cases
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">

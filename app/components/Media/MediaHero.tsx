@@ -65,7 +65,7 @@ function MediaHero() {
                 className="w-full h-[300px] object-cover col-span-3"
               />
               <Image
-                src="/media/6.jpg"
+                src="/media/7.jpg"
                 alt="abt"
                 width={1920}
                 height={1080}
