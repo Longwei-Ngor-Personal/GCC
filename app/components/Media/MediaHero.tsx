@@ -1,7 +1,11 @@
+"use client";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Header from "../Header";
 
 function MediaHero() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
@@ -17,22 +21,17 @@ function MediaHero() {
                 className="h-[100px] object-cover"
               />
             </div>
+
+            {/* ✅ Paragraph 1 */}
             <p className="text-lg text-gray-600 text-justify">
-              GC Media possesses extensive media resources and core
-              competencies, offering services such as brand enhancement.
-              advertising production, promotional campaigns, and event planning.
-              By collaborating with leading local media teams, we have built a
-              diversified and dynamic media ecosystem. Our main strengths
-              include: TV commercial production, Corporate promotional videos,
-              Documentaries and short films. Event planning and execution.
-              Product packaging design.
+              {t("media.hero.paragraph1")}
             </p>
+
+            {/* ✅ Paragraph 2 */}
             <p className="text-lg text-gray-600 text-justify mt-2">
-              Media campaigns and publicity. Through rich resources and strong
-              team collaboration, our goal is to help businesses effectively
-              promote their products, fulfill business owners branding needs,
-              and create influential content that enhances brand value
+              {t("media.hero.paragraph2")}
             </p>
+
             <div className="grid grid-cols-5 gap-2 mt-6">
               <div className="col-span-2">
                 <Image
@@ -73,6 +72,7 @@ function MediaHero() {
               />
             </div>
           </div>
+
           <div className="relative hidden md:block">
             <Image
               src="/media/hero.jpg"
@@ -82,7 +82,8 @@ function MediaHero() {
               className="w-full md:h-[1300px] lg:h-[1050px] object-cover object-left"
             />
             <div className="absolute hidden w-32 lg:w-44 h-full bg-[#471D88] top-0 right-0 text-white text-center font-medium text-lg lg:text-2xl md:flex items-center justify-center">
-              <h1>Cultural Popularization</h1>
+              {/* ✅ Side label */}
+              <h1>{t("media.hero.sideLabel")}</h1>
             </div>
           </div>
         </div>

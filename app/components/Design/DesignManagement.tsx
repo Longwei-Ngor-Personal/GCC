@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function DesignManagement() {
+  const { t } = useTranslation();
+
   return (
     <section id="management" className="w-full py-12 md:py-24 lg:py-32">
       <div className="px-4 md:px-16">
@@ -17,22 +22,16 @@ function DesignManagement() {
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-              Project Management
+              {t("design.management.title")}
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              No matter the size of the production, every chorus needs a
-              conductor. Experience tells us. Project leader is effective in
-              hierarchical and project needs to be organized.
+              {t("design.management.p1")}
             </p>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              We fully involve in building, project coordinating, act as a
-              representative of clients. We promote bids and monitor the site
-              work with professionals like architect, engineer, purchasing
-              representative, developer, project manager.
+              {t("design.management.p2")}
             </p>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              Therefore, we are a professional team that executes honestly,
-              respects time frame, respects budget.
+              {t("design.management.p3")}
             </p>
           </div>
         </div>

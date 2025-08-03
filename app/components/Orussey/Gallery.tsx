@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const GalleryOrussey = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="px-16 py-12 text-slate-800 bg-[#F4F4F4]">
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
@@ -16,7 +19,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            Indoor Shopping Mall
+            {t("realestate.gallery.indoorMall")}
           </h1>
         </div>
         <div className="mt-4">
@@ -28,7 +31,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            Indoor Shopping Mall
+            {t("realestate.gallery.indoorMall")}
           </h1>
         </div>
         <div className="mt-4">
@@ -40,7 +43,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            Indoor Shoppping Mall
+            {t("realestate.gallery.indoorMall")}
           </h1>
         </div>
         <div className="mt-4">
@@ -52,7 +55,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            Rooftop Plaza
+            {t("realestate.gallery.rooftopPlaza")}
           </h1>
         </div>
         <div className="mt-4">
@@ -64,7 +67,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            Rooftop Plaza
+            {t("realestate.gallery.rooftopPlaza")}
           </h1>
         </div>
         <div className="mt-4">
@@ -75,7 +78,9 @@ const GalleryOrussey = () => {
             height={1000}
             className="w-full h-[300px] object-cover"
           />
-          <h1 className="font-medium text-xl text-center mt-4">Shop Display</h1>
+          <h1 className="font-medium text-xl text-center mt-4">
+            {t("realestate.gallery.shopDisplay")}
+          </h1>
         </div>
       </div>
     </section>

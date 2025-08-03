@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const InvestmentQALink = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -12,7 +14,7 @@ const InvestmentQALink = () => {
       className="relative h-fit w-fit"
     >
       <a href="/investmentqa" className="relative text-sm font-bold">
-        Government Cooperation Activities
+        {t("navbar.investmentQA")}
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",

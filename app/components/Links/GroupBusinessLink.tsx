@@ -2,9 +2,11 @@
 
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const GroupBusinessLink = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -13,7 +15,7 @@ const GroupBusinessLink = () => {
       className="relative h-fit w-fit z-50"
     >
       <a href="#" className="relative text-sm font-bold">
-        Group Businesses
+        {t("navbar.groupBusiness")}
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",
@@ -29,7 +31,7 @@ const GroupBusinessLink = () => {
             exit={{ opacity: 0, y: 15 }}
             style={{ translateX: "-50%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="absolute left-1/2 top-12  text-black"
+            className="absolute left-1/2 top-12 text-black"
           >
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
             <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-primary" />
@@ -41,23 +43,23 @@ const GroupBusinessLink = () => {
   );
 };
 
-const CategoryDropdown = ({ title, href }: { title: string; href: string }) => {
-  return (
-    <a href={href} className="block hover:underline">
-      {title}
-    </a>
-  );
-};
+const CategoryDropdown = ({ title, href }: { title: string; href: string }) => (
+  <a href={href} className="block hover:underline">
+    {title}
+  </a>
+);
 
 const AboutUsContent = () => {
+  const { t } = useTranslation();
+
   const categories = [
-    { title: "Real Estate Development", href: "/nadi" },
-    { title: "Financial Investment", href: "/trust" },
-    { title: "Property Management", href: "/property" },
-    { title: "F&B Entertainments", href: "/hotpot" },
-    { title: "Architectural Design", href: "/design" },
-    { title: "Cultural Popularization", href: "/media" },
-    { title: "Charity & Public Welfare", href: "/care" },
+    { title: t("navbar.realEstate"), href: "/nadi" },
+    { title: t("navbar.investment"), href: "/trust" },
+    { title: t("navbar.management"), href: "/property" },
+    { title: t("navbar.entertainment"), href: "/hotpot" },
+    { title: t("navbar.design"), href: "/design" },
+    { title: t("navbar.media"), href: "/media" },
+    { title: t("navbar.care"), href: "/care" },
   ];
 
   return (

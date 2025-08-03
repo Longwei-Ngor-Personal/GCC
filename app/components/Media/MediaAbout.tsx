@@ -1,20 +1,19 @@
+'use client';
+import { useTranslation } from 'react-i18next';
+
 function MediaAbout() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="pt-20 pb-14">
       <div className="container mx-auto px-4">
         <div className="lg:grid grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              About GC Media and Our Approach{" "}
+              {t('media.about.title')}
             </h2>
             <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-              GC media is an advertising media company focusing on high-end
-              media operation strongly built by GCC, having rich media resources
-              and core advantages businesses, including brand image promotion,
-              advertising production and promotion, event banquet, etc. Under
-              our all-round and highly efficient media development framework,
-              combined with senior local media team, we build a multi-market
-              media business system.
+              {t('media.about.description')}
             </p>
           </div>
           <video

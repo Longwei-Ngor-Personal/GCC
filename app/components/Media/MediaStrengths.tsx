@@ -1,6 +1,10 @@
+"use client";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
 function MediaStrengths() {
+  const { t } = useTranslation();
+
   return (
     <section id="strength" className="pt-20 pb-14">
       <div className="container mx-auto px-4">
@@ -16,36 +20,29 @@ function MediaStrengths() {
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-              Our Strengths and Business Scope
+              {t("media.strengths.title")}
             </h2>
             <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-              Our main strengths lie in TV advertising shooting and production,
-              enterprise advertising video, documentary, short film/short video,
-              event planning and implementation, product packaging planning and
-              sales, and media campaigns. Combining rich resources and team
-              cooperation, our goal is to effectively promote products for
-              businesses. We aim to meet the rendering power of business owners
-              and brand creation, and create valuable, influential content and
-              types for clients&apos; brands.{" "}
+              {t("media.strengths.description")}
             </p>
             <div className="grid grid-cols-2 gap-4">
               <p className="md:text-lg text-gray-700 font-semibold leading-relaxed">
-                Branding business performance
+                {t("media.strengths.points.branding")}
               </p>
               <p className="md:text-lg text-gray-700 font-semibold leading-relaxed">
-                Media launch party planning{" "}
+                {t("media.strengths.points.launch")}
               </p>
               <p className="md:text-lg text-gray-700 font-semibold leading-relaxed">
-                Facebook advertising and management
+                {t("media.strengths.points.facebook")}
               </p>
               <p className="md:text-lg text-gray-700 font-semibold leading-relaxed">
-                Tik tok advertising and management
+                {t("media.strengths.points.tiktok")}
               </p>
               <p className="md:text-lg text-gray-700 font-semibold leading-relaxed">
-                Design printing
+                {t("media.strengths.points.design")}
               </p>
               <p className="md:text-lg text-gray-700 font-semibold leading-relaxed">
-                LED Board/LED Screen
+                {t("media.strengths.points.led")}
               </p>
             </div>
           </div>

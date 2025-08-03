@@ -1,40 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Information() {
+  const { t } = useTranslation();
+
   return (
     <div className="px-4 md:px-16 py-20">
       <div className="container w-full flex flex-col-reverse md:flex-row items-center justify-center gap-6">
         <div className="w-full space-y-5 md:mr-16">
-          <p>
-            Golden Cambodia Century Group is Cambodia&apos;s most diversified
-            international conglomerate, with business operations spanning across
-            Southeast Asia. Upholding the principles of continuous innovation,
-            inheritance of experience, and the continuation of entrepreneurial
-            spirit, the Group is committed to driving Cambodia&apos;s
-            sustainable development and economic growth as its primary mission.
-          </p>
-          <p>
-            The Group&apos;s diversified portfolio includes real estate
-            development, asset management, financial investment, land
-            investment, media, food and beverage, and leisure and entertainment.
-            As one of Cambodia&apos;s largest property developers, the Group
-            leads local real estate development and investment, with landmark
-            projects such as the high-end Borey NADI by GC City, shopping mall
-            GC Orussey Market, the international business-residential complex
-            CEO Center, and the shopping complex SOHO Mall.
-          </p>
-          <p>
-            To date, Golden Cambodia Century has accumulated over 3,000 hectares
-            of land reserves in Cambodia and holds assets exceeding USD 3
-            billion. GCC continuously seeks new opportunities, expanding beyond
-            its core real estate and financial sectors to develop complementary
-            lifestyle industries in Cambodia. In line with global trends, the
-            Group has introduced a variety of international culinary cultures to
-            the local market, such as Luk Hot pot (Hong Kong-style hotpot) and
-            Bars, striving to create a more internationalized and enriched
-            living experience for the Cambodian people.
-          </p>
+          <p>{t("aboutus.about.info1")}</p>
+          <p>{t("aboutus.about.info2")}</p>
+          <p>{t("aboutus.about.info3")}</p>
         </div>
         <div className="md:w-2/3 relative">
           <Image
@@ -45,10 +24,11 @@ function Information() {
             className="w-full h-[400px] md:h-[700px] object-cover"
           />
           <div className="hidden md:flex w-14 h-40 bg-[#1F2C57] absolute top-10 -left-14 shadow-2xl shadow-black text-primary font-medium text-center items-center justify-center">
-            <p>About Us</p>
+            <p>{t("aboutus.about.title")}</p>
           </div>
         </div>
       </div>
+
       <div className="mt-20">
         <div className="relative w-full text-white">
           <Image
@@ -61,18 +41,14 @@ function Information() {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-45 " />
           <div className="z-50">
             <h2 className="absolute top-16 left-5 md:left-14 w-full h-full text-lg md:text-4xl font-semibold">
-              Coporate Vision
+              {t("aboutus.about.visionTitle")}
             </h2>
             <p className="absolute top-28 left-5 md:left-14 w-[80%] md:w-1/2 h-full lg:text-lg font-medium ">
-              To become a leading enterprise rooted in Cambodia, establishing a
-              financial and real estate investment bridge that connects ASEAN
-              and the Belt and Road Initiative, contributing to economic
-              development. At the same time, we are committed to bringing
-              kindness and positive experiences to the people of Cambodia,
-              giving back to society with compassion.
+              {t("aboutus.about.visionDesc")}
             </p>
           </div>
         </div>
+
         <div className="flex flex-col md:flex-row items-center gap-10">
           <Image
             src="/about/teamm.jpg"
@@ -83,18 +59,9 @@ function Information() {
           />
           <div className="w-full">
             <h2 className="text-lg md:text-4xl font-semibold">
-              Coporate Mission
+              {t("aboutus.about.missionTitle")}
             </h2>
-            <p className="mt-4">
-              To integrate international business acumen with local culture and
-              traditions, building an innovative enterprise that combines
-              finance, real estate, and technology. Through a comprehensive
-              management system, we aim to create local employment
-              opportunities, stimulate the domestic economy, and attract
-              international capital. At the same time, we are dedicated to
-              supporting underprivileged communities in Cambodia and showing
-              genuine care for society.
-            </p>
+            <p className="mt-4">{t("aboutus.about.missionDesc")}</p>
           </div>
         </div>
       </div>

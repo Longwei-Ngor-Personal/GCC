@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const SocialResponsibilityLink = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -12,7 +14,7 @@ const SocialResponsibilityLink = () => {
       className="relative h-fit w-fit"
     >
       <a href="/socialresponsibility" className="relative text-sm font-bold">
-        Social Responsibility
+        {t("navbar.socialResponsibility")}
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",

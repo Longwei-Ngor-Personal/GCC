@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const OverseaBrandsLink = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -12,7 +14,7 @@ const OverseaBrandsLink = () => {
       className="relative h-fit w-fit"
     >
       <a href="/hongkong" className="relative text-sm font-bold">
-        Oversea Branches
+        {t("navbar.overseaBranches")}
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",

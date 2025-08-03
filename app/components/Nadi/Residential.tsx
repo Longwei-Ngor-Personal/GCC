@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Residential = () => {
+  const { t } = useTranslation();
   return (
     <section className=" px-16 py-12 text-slate-800 bg-[#F4F4F4]">
       <div className="grid lg:grid-cols-2 gap-6">
@@ -24,7 +26,7 @@ const Residential = () => {
               className="object-stretch lg:w-64 h-44 lg:h-32"
             />
           </div>
-          <h1 className="text-xl font-medium mt-4">Shop House</h1>
+          <h1 className="text-xl font-medium mt-4">{t("realestate.residential.shophouse")}</h1>
         </div>
         <div className="w-full text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -43,7 +45,7 @@ const Residential = () => {
               className="object-stretch lg:w-64 h-44 lg:h-32"
             />
           </div>
-          <h1 className="text-xl font-medium mt-6">Link House</h1>
+          <h1 className="text-xl font-medium mt-6">{t("realestate.residential.linkhouse")}</h1>
         </div>
         <div className="w-full text-center mt-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -62,7 +64,7 @@ const Residential = () => {
               className="object-stretch lg:w-64 h-44 lg:h-32"
             />
           </div>
-          <h1 className="text-xl font-medium mt-6">Single Villa</h1>
+          <h1 className="text-xl font-medium mt-6">{t("realestate.residential.singlevilla")}</h1>
         </div>
         <div className="w-full text-center mt-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -81,7 +83,7 @@ const Residential = () => {
               className="object-stretch lg:w-64 h-44 lg:h-32"
             />
           </div>
-          <h1 className="text-xl font-medium mt-6">Grand Single Villa</h1>
+          <h1 className="text-xl font-medium mt-6">{t("realestate.residential.grandvilla")}</h1>
         </div>
         <div className="w-full text-center mt-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -100,7 +102,7 @@ const Residential = () => {
               className="object-stretch lg:w-64 h-44 lg:h-32"
             />
           </div>
-          <h1 className="text-xl font-medium mt-6">Twin Villa</h1>
+          <h1 className="text-xl font-medium mt-6">{t("realestate.residential.twinvilla")}</h1>
         </div>
         <div className="w-full text-center mt-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -119,7 +121,7 @@ const Residential = () => {
               className="object-stretch lg:w-64 h-44 lg:h-32"
             />
           </div>
-          <h1 className="text-xl font-medium mt-6">Condominium</h1>
+          <h1 className="text-xl font-medium mt-6">{t("realestate.residential.condo")}</h1>
         </div>
       </div>
     </section>

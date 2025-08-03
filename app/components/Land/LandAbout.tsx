@@ -1,6 +1,12 @@
+// LandAbout.tsx (with i18n translation applied)
+"use client";
+
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 function LandAbout() {
+  const { t } = useTranslation();
+
   return (
     <section id="focus" className="pt-20 pb-14">
       <div className="container mx-auto px-4">
@@ -20,29 +26,13 @@ function LandAbout() {
               height={300}
             />
             <p className="md:text-lg text-gray-700 leading-relaxed my-6">
-              GC land is one of the brands under GCC. It is a primary land
-              developer. Land is a precious resource and also a cornerstone of
-              the company. It is very challenging for primary land developer to
-              make profit for the company and the investors. At the same time,
-              buyers and cooperating party got legal protection and perfectly
-              tailored land for development.{" "}
+              {t("trust.landabout.p1")}
             </p>
             <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-              Every high-rise building starts from the ground. Our motto is to
-              make good use of land resources, release the potential of land,
-              value adding to the land, creating a full district development,
-              reviving the urban function, increase public interests, improve
-              the city appearance, and bring people a sustainable and
-              high-quality living environment through maximization of land
-              value.
+              {t("trust.landabout.p2")}
             </p>
             <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-              GC land has in-depth research and professional analysis on
-              Cambodian land market. We have excellent professional team, unique
-              insight on land, excellent resource integration ability, and make
-              the best preparation for the new town project with efficient
-              planning and infrastructure construction. Unleased the potential
-              of a land and create new opportunities for economic development!
+              {t("trust.landabout.p3")}
             </p>
           </div>
           <Image

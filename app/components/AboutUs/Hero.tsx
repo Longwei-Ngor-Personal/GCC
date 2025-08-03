@@ -1,8 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Header from "../Header";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative w-full h-[760px] text-primary">
       <Image
@@ -18,16 +23,13 @@ function Hero() {
         <div className="w-full h-full flex items-center ">
           <div className="px-4 md:px-16">
             <h1 className="text-5xl lg:text-7xl 2xl:text-8xl font-semibold">
-              About Us
+              {t("aboutus.hero.heading1")}
             </h1>
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-normal italic">
-              Golden Cambodia Century
+              {t("aboutus.hero.heading2")}
             </h1>
             <p className="text-lg lg:text-xl italic md:w-[600px] lg:w-[900px]">
-              GCC has established a variety of businesses across the
-              South-Eastern area. We are an integrated enterprise originated
-              from Hong Kong China, establish our foundation in Cambodia, and
-              now facing ASEAN market.
+              {t("aboutus.hero.description")}
             </p>
           </div>
         </div>

@@ -1,7 +1,12 @@
+"use client";
+
 import Header from "../Header";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
@@ -16,27 +21,15 @@ export default function Hero() {
               className="w-full md:h-[950px] lg:h-[1000px] object-cover"
             />
             <div className="absolute hidden w-36 h-full bg-[#823E16] top-0 left-0 text-white text-center font-medium text-2xl md:flex items-center justify-center">
-              <h1>Achitectural Design</h1>
+              <h1>{t("design.hero.title")}</h1>
             </div>
           </div>
           <div className="w-full">
             <p className="text-lg text-gray-600 text-justify">
-              Our Architecture & Construction Department is composed of
-              professionals from various countries, offering an integrated,
-              end-to-end service that covers construction engineering, planning
-              and design. building development, and after-sales repair and
-              maintenance. By combining the unique strengths and extensive
-              experience of our team members, we tailor customized designs and
-              styles that meet each client&apos;s specific needs, both inside
-              and out, to create a personalized living experience.
+              {t("design.hero.p1")}
             </p>
             <p className="text-lg text-gray-600 text-justify mt-2">
-              Guided by the principles of &apos;Service, Safety, Quality,
-              Efficiency, and Innovation.&apos; we approach every project with
-              care and commitment. We always stand from the residents
-              perspective. striving to create spaces where every client feels
-              secure and at home turning their vision of an ideal residence into
-              reality.
+              {t("design.hero.p2")}
             </p>
             <div className="grid grid-cols-2 gap-2 mt-6">
               <Image

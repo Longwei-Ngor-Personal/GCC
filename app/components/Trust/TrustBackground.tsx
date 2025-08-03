@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 function TrustBackground() {
+  const { t } = useTranslation();
+
   return (
     <section id="background">
       <div className="container mx-auto px-4">
@@ -22,14 +27,10 @@ function TrustBackground() {
             />
 
             <p className="md:text-lg text-gray-700 font-bold leading-relaxed mb-6">
-              GC Trust is a financial institution established under the Trust
-              Law of the Kingdom of Cambodia to operate trust services.
+              {t("trust.background.statement1")}
             </p>
             <p className="md:text-lg text-gray-700 leading-relaxed mb-6">
-              Approved by the Cambodian government and the Securities and
-              Exchange Commission, it is authorized to manage fund trusts, land
-              trusts, and property trusts. It is one of the formally licensed
-              trust institutions in Cambodia.
+              {t("trust.background.statement2")}
             </p>
           </div>
         </div>

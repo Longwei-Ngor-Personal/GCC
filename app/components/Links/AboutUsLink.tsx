@@ -2,9 +2,11 @@
 
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const AboutUsLink = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -13,7 +15,7 @@ const AboutUsLink = () => {
       className="relative h-fit w-fit z-50"
     >
       <a href="#" className="relative text-sm font-bold">
-        About Us
+        {t("navbar.about")}
         <span
           style={{
             transform: open ? "scaleX(1)" : "scaleX(0)",
@@ -42,15 +44,16 @@ const AboutUsLink = () => {
 };
 
 const AboutUsContent = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full bg-primary p-6 shadow-none lg:w-[250px] lg:shadow-xl text-white font-medium">
       <div className="grid grid-cols-2 lg:grid-cols-1">
         <div className="space-y-3">
           <a href="/about" className="block hover:underline">
-            About GCC
+            {t("navbar.aboutGCC")}
           </a>
           <a href="/board" className="block hover:underline">
-            Board of Directors
+            {t("navbar.board")}
           </a>
         </div>
       </div>

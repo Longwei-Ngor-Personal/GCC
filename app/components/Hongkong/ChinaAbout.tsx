@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 function ChinaAbout() {
+  const { t } = useTranslation();
+
   return (
     <section className="container mx-auto pt-18">
       <div className="grid grid-cols-2 gap-4">
@@ -12,20 +17,14 @@ function ChinaAbout() {
           className="h-full object-cover"
         />
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">GCC CHINA</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+            {t("branches.china.title")}
+          </h1>
           <p className="text-gray-600 mb-4 leading-relaxed md:text-lg">
-            GCC China is a key branch of Golden Cambodia Century (GCC), an
-            international integrated enterprise rooted in Cambodia and centered
-            on real estate development. Guided by the shared vision of
-            &ldquo;One For All, All For One&rdquo;.
+            {t("branches.china.p1")}
           </p>
           <p className="text-gray-600 mb-6 leading-relaxed md:text-lg">
-            GCC China operates under a long-term strategic cooperation
-            framework, aiming to deliver high-quality, value-driven projects and
-            drive strategic market expansion. Through collaborative efforts,
-            deep real estate investment experience, and strong marketing
-            capabilities, GCC China actively contributes to the sustained
-            progress of the Belt and Road Initiative.
+            {t("branches.china.p2")}
           </p>
           <Image
             src="/hongkong/2.jpg"

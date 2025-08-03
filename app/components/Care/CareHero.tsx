@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Header from "../Header";
+import { useTranslation } from "react-i18next";
 
 function CareHero() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
@@ -30,7 +35,7 @@ function CareHero() {
               className="w-full md:h-[600px] lg:h-[375px] object-cover object-top"
             />
             <div className="absolute hidden w-24 h-full bg-[#931E27] top-0 left-0 text-white text-center font-medium text-2xl md:flex items-center justify-center">
-              <h1>Charity</h1>
+              <h1>{t("care.hero.title")}</h1>
             </div>
           </div>
           <div>
@@ -40,29 +45,17 @@ function CareHero() {
                 alt="abt"
                 width={200}
                 height={200}
-                className="object-cover "
+                className="object-cover"
               />
             </div>
             <p className="text-lg text-gray-600 text-justify">
-              Over the past decade, Cambodia has experienced rapid economic
-              growth, becoming the fastest-growing market economy among ASEAN
-              countries. However, remote rural communities still face
-              environmental challenges that hinder their quality of life.
-              Children are the future of a nation, and education plays a crucial
-              role in nurturing their potential. Beyond satisfying basic needs
-              such as food and shelter, education inspires hope and opens the
-              door to new possibilities.
+              {t("care.hero.p1")}
             </p>
             <p className="text-lg text-gray-600 text-justify mt-2">
-              Rooted in our core is to help build a better Cambodia, we are
-              committed to extending warmth and support to those in need—
-              believing that even the smallest acts of kindness can make a huge
-              difference.
+              {t("care.hero.p2")}
             </p>
             <p className="text-lg text-gray-600 text-justify mt-2">
-              Everyone deserves love, care, and protection. With compassion as
-              our foundation, we believe in creating a future of shared
-              prosperity.
+              {t("care.hero.p3")}
             </p>
             <div className="grid lg:grid-cols-2 gap-2 mt-6">
               <Image

@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Header from "../Header";
+import { useTranslation } from "react-i18next";
 
 function HotpotHero() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
@@ -31,20 +36,12 @@ function HotpotHero() {
               className="w-full md:h-[670px] lg:h-[485px] object-cover hidden md:block"
             />
             <div className="absolute hidden w-40 h-full bg-[#823E16] top-0 left-0 text-white text-center font-medium text-2xl md:flex items-center justify-center">
-              <h1>F&B Entertainment</h1>
+              <h1>{t("hotpot.hero.sidebar")}</h1>
             </div>
           </div>
           <div className="w-full">
             <p className="text-lg text-gray-600 text-justify mb-6">
-              We are dedicated to crafting a diverse culinary landscape that
-              emphasizes safety, hygiene, and high-quality gourmet offerings.
-              Driven by a customer-first philosophy, we implement comprehensive
-              restaurant management and invest thoughtfully in food quality,
-              service, and ambiance. Delivering rich and innovative dining
-              experiences is both our mission and vision. We continually expand
-              our restaurant concepts to meet market demands. From cuisine to
-              service, we insist on providing a delicious, stylish, and
-              comfortable experience for every guest.
+              {t("hotpot.hero.p1")}
             </p>
             <Image
               src="/hotpot/banner.jpg"
@@ -54,17 +51,8 @@ function HotpotHero() {
               className="w-full h-[300px] object-cover"
             />
             <p className="text-lg text-gray-600 text-justify mt-6">
-              Our vision extends beyond food. We operate an integrated platform
-              that unites dining, bar, and entertainment experiences, with a
-              focus on innovation, enjoyment, and lifestyle enrichment. We are
-              devoted to offering high-quality, diverse leisure experiences that
-              bring moments of joy and relaxation into everyday life. Looking
-              ahead, we aspire to develop more innovative entertainment concepts
-              that contribute to Cambodia&apos;s entertainment economy and
-              introduce new and diversified projects-becoming one of
-              Cambodia&apos;s leading leisure and
+              {t("hotpot.hero.p2")}
             </p>
-
             <Image
               src="/hotpot/logo.png"
               alt="abt"

@@ -1,4 +1,5 @@
 "use client";
+import i18n from '../../src/i18n';
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -57,10 +58,18 @@ function Header() {
           id="language"
           className="absolute -top-7 right-36 text-xs flex gap-[1px]"
         >
-          <button id="eng-btn" className="p-2 bg-primary text-white">
+          <button
+            id="eng-btn"
+            className="p-2 bg-primary text-white"
+            onClick={() => i18n.changeLanguage('en')}
+          >
             ENG
           </button>
-          <button id="chinese-btn" className="p-2 bg-primary text-white">
+          <button
+            id="chinese-btn"
+            className="p-2 bg-primary text-white"
+            onClick={() => i18n.changeLanguage('zh')}
+          >
             中文
           </button>
         </div>

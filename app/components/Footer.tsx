@@ -1,8 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="py-12 text-gray-600 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -18,17 +23,16 @@ export default function Footer() {
             <div className="flex items-center space-x-2 pt-10">
               <MapPin className="h-5 w-5" />
               <span className="max-w-lg">
-                Guangdong Investment Tower 21/Floor, 148 Connaught Rd Central,
-                Sheung Wan, Hong Kong
+                {t("footer.address")}
               </span>
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="h-5 w-5" />
-              <span>+852 530 13176</span>
+              <span>{t("footer.phone")}</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-5 w-5" />
-              <span>info@example.com</span>
+              <span>{t("footer.email")}</span>
             </div>
           </div>
 
@@ -37,17 +41,17 @@ export default function Footer() {
             {/* About Us */}
             <div>
               <h3 className="font-semibold lg:text-lg mb-4 text-gray-900">
-                About Us
+                {t("footer.about.title")}
               </h3>
               <ul className="space-y-2 text-sm lg:text-base">
                 <li>
                   <Link href="/about" className="hover:underline">
-                    About GC City
+                    {t("footer.about.aboutGCCity")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/board" className="hover:underline">
-                    Chairman Message <br /> & Board of Directors
+                    {t("footer.about.chairmanAndBoard")}
                   </Link>
                 </li>
               </ul>
@@ -56,17 +60,17 @@ export default function Footer() {
             {/* Groups */}
             <div>
               <h3 className="font-semibold lg:text-lg mb-4 text-gray-900">
-                Groups Business
+                {t("footer.groups.title")}
               </h3>
               <ul className="space-y-2 text-sm lg:text-base">
                 <li>
                   <Link href="https://cm2h.com/" className="hover:underline">
-                    Cambodia My 2nd Home
+                    {t("footer.groups.cm2h")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/nadi" className="hover:underline">
-                    Nadi by GC City
+                    {t("footer.groups.nadi")}
                   </Link>
                 </li>
                 <li>
@@ -74,31 +78,31 @@ export default function Footer() {
                     href="https://gcc-gp.com/en/gc-orussey-market/"
                     className="hover:underline"
                   >
-                    GC Orussey
+                    {t("footer.groups.orussey")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/media" className="hover:underline">
-                    GC Media
+                    {t("footer.groups.media")}
                   </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Brands & Information */}
+            {/* Branches */}
             <div>
               <h3 className="font-semibold lg:text-lg mb-4 text-gray-900">
-                Oversea Branches
+                {t("footer.branches.title")}
               </h3>
               <ul className="space-y-2 text-sm lg:text-base">
                 <li>
                   <Link href="/hongkong" className="hover:underline">
-                    GC Hong Kong
+                    {t("footer.branches.hk")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/japan" className="hover:underline">
-                    GC Japan
+                    {t("footer.branches.jp")}
                   </Link>
                 </li>
               </ul>
@@ -107,10 +111,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-muted-foreground/20 text-center text-sm lg:text-base">
-          <p>
-            &copy; {new Date().getFullYear()} Golden Cambodia Century. All
-            rights reserved.
-          </p>
+          <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
         </div>
       </div>
     </footer>
