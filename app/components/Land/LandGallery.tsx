@@ -58,7 +58,7 @@ function LandGallery() {
             />
           </div>
 
-          <div className="aspect-square relative group overflow-hidden">
+          {/* <div className="aspect-square relative group overflow-hidden">
             <Image
               src="/land/img4.png"
               width={1920}
@@ -86,7 +86,7 @@ function LandGallery() {
               alt="Apartment Project 6"
               className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

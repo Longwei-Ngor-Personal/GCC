@@ -43,7 +43,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            {t("realestate.gallery.indoorMall")}
+            {t("realestate.gallery.rooftopPlaza")}
           </h1>
         </div>
         <div className="mt-4">
@@ -55,7 +55,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            {t("realestate.gallery.rooftopPlaza")}
+            {t("realestate.gallery.shopDisplay")}
           </h1>
         </div>
         <div className="mt-4">
@@ -67,7 +67,7 @@ const GalleryOrussey = () => {
             className="w-full h-[300px] object-cover"
           />
           <h1 className="font-medium text-xl text-center mt-4">
-            {t("realestate.gallery.rooftopPlaza")}
+            {t("realestate.gallery.shopDisplay")}
           </h1>
         </div>
         <div className="mt-4">

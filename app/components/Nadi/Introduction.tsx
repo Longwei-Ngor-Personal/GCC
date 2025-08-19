@@ -15,13 +15,21 @@ function Introduction() {
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
           <div className="relative w-full h-[350px] lg:h-full order-2 lg:order-1">
-            <iframe
+            {/* <iframe
               src="https://www.youtube-nocookie.com/embed/rVY0aFvNvX8"
               title="Company Introduction Video"
               className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+            <div className="relative w-full h-[350px] lg:h-full order-2 lg:order-1">
+            <Image
+              src="/nadi/gccity.webp"  // 👈 put your new image here
+              alt="Nadi Project Introduction"
+              fill
+              className="object-cover rounded-lg shadow-lg"
+            />
+          </div>
           </div>
           <div className="space-y-6 order-1 lg:order-2">
             <div className="flex items-center gap-6">
