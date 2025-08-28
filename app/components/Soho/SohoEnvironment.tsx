@@ -23,17 +23,31 @@ function SohoEnvironment() {
             </div>
           </div>
           <div className="mt-10">
-            <Image src="/soho/sh1.png" alt="soho" width={1920} height={1080} />
+            <Image src="/soho/sh08.jpg" alt="soho" width={1920} height={1080} />
             <div className="grid grid-cols-2 gap-2 mt-2">
               <Image
-                src="/soho/sh05.jpg"
+                src="/soho/sh09.jpg"
                 alt="SOHO MALL Interior 1"
                 width={1920}
                 height={1080}
                 className="w-full h-auto"
               />
               <Image
-                src="/soho/sh03.jpg"
+                src="/soho/sh10.jpg"
+                alt="SOHO MALL Interior 2"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
+              <Image
+                src="/soho/sh11.jpg"
+                alt="SOHO MALL Interior 1"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
+              <Image
+                src="/soho/sh12.jpg"
                 alt="SOHO MALL Interior 2"
                 width={1920}
                 height={1080}

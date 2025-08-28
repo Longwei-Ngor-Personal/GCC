@@ -240,6 +240,17 @@
     "environment": {
       "p1": "SOHO Mall is a major entertainment complex under GCC Group's property management portfolio in the BKK Riverside District of Cambodia. Located in the core leisure zone of Phnom Penh, it is surrounded by major landmarks such as Naga World Entertainment Complex, The Peak, and The Bridge. The mall features three floors with a total area of 11,500 square meters, housing hundreds of retail shops. It integrates fashion and creativity, gourmet cuisine, and leisure entertainment into a single vibrant destination.",
       "p2": "With GCC's extensive development experience and strong backing, SOHO Mall has successfully attracted numerous well-known brands. Through its multicultural atmosphere, enjoyable leisure environment, and diverse themed events, the mall delivers a comprehensive and refreshing lifestyle experience for consumers."
+    },
+    "add": {
+      "intro": "Our professional property management team, with extensive industry experience, provides services such as leasing and sales, project management, post-operation, business layout and planning, and maintenance for various property types, including residential, commercial, and large-scale shopping malls. We ensure smooth property operations and provide comprehensive property management services for tenants and owners, enhancing their value and user experience.",
+      "section": {
+        "p1": "Our mission is to continuously identify and discover reliable projects for investors. To provide clients with more professional services, we stay abreast of regional trends, reserve strong development resources, and analyze the market to formulate sound investment decisions. Through a proactive and enthusiastic service spirit and professional teamwork, we provide clients with outstanding personalized services.",
+        "p2": "We are committed to helping developers enhance the value of their real estate developments and implement the most effective promotional plans. We have various sales channels and use the flow of customer inquiries to measure the value of each marketing campaign, shortening sales time and increasing transaction rates."
+      },
+      "vision": {
+        "l1": "We provide not only good products and good projects, but also promise investors after-sales service.",
+        "l2": "Adhere to integrity, protect the interests of customers, and create higher added value for them."
+      }
     }
   },
   "hotpot": {
@@ -455,5 +466,3 @@
     "copyright": "© {{year}} Golden Cambodia Century. All rights reserved."
   }
 }
-
-

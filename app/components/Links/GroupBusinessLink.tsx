@@ -59,7 +59,7 @@ const AboutUsContent = () => {
     { title: t("navbar.entertainment"), href: "/hotpot" },
     { title: t("navbar.design"), href: "/design" },
     { title: t("navbar.media"), href: "/media" },
-    { title: t("navbar.care"), href: "/care" },
+    // { title: t("navbar.care"), href: "/care" },
   ];
 
   return (

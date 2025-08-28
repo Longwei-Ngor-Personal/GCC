@@ -72,6 +72,14 @@ function Header() {
           >
             中文
           </button>
+          {/* NEW: Cantonese */}
+          <button
+            id="cantonese-btn"
+            className="p-2 bg-primary text-white"
+            onClick={() => i18n.changeLanguage('cantonese')}
+          >
+            廣東話
+          </button>   
         </div>
       </div>
     </nav>

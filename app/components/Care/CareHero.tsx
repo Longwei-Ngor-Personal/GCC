@@ -9,7 +9,7 @@ function CareHero() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="py-32 px-6 md:px-16">
         <div className="grid md:grid-cols-2 gap-4">
           <div className="relative">

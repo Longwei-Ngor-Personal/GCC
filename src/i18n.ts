@@ -6,6 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './locales/en/translation.json';
 import zh from './locales/zh/translation.json';
+import cantonese from './locales/cantonese/translation.json';
 
 i18n
   .use(LanguageDetector)
@@ -15,6 +16,7 @@ i18n
     resources: {
       en: { translation: en },
       zh: { translation: zh },
+      cantonese: { translation: cantonese },
     },
     interpolation: {
       escapeValue: false, // React already escapes values

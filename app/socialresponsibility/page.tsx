@@ -1,5 +1,6 @@
 "use client";
 
+import CareHero from "../components/Care/CareHero";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -35,6 +36,7 @@ function SocialResponsibilityPage() {
           </div>
         </div>
       </section>
+      <CareHero />
       <Footer />
     </>
   );

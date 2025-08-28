@@ -13,7 +13,7 @@ function LandAbout() {
         <div className="lg:grid grid-cols-2 gap-12">
           <Image
             src="/land/about.png"
-            alt="SOHO MALL Interior"
+            alt="GC Land"
             width={1920}
             height={1080}
             className="w-full h-[600px] object-cover hidden lg:block "
