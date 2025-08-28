@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Header from "../Header";
 import { useTranslation } from "react-i18next";
 
 function CareHero() {
