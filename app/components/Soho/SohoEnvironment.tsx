@@ -14,10 +14,10 @@ function SohoEnvironment() {
           <div className="flex items-center">
             <Image src="/soho/logo.png" alt="logo" width={500} height={500} />
             <div>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed text-justify mb-6">
                 {t("soho.environment.p1")}
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed text-justify">
                 {t("soho.environment.p2")}
               </p>
             </div>

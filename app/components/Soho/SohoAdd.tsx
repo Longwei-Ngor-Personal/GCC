@@ -23,7 +23,7 @@ function SohoAdd() {
       {/* Intro paragraph */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-lg leading-relaxed text-gray-700 max-w-4xl mx-auto">
+          <p className="text-lg text-gray-700 text-justify leading-relaxed">
             {t("soho.add.intro")}
           </p>
         </div>
@@ -44,10 +44,10 @@ function SohoAdd() {
 
             {/* Right Text */}
             <div className="mt-8 lg:mt-0">
-              <p className="md:text-lg text-gray-700 leading-relaxed my-6">
+              <p className="text-lg text-gray-600 text-justify my-6">
                 {t("soho.add.section.p1")}
               </p>
-              <p className="md:text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-600 text-justify">
                 {t("soho.add.section.p2")}
               </p>
             </div>
@@ -67,10 +67,10 @@ function SohoAdd() {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-45" />
           <div className="absolute top-16 left-5 md:left-14 z-50">
-            <p className="mt-4 w-[80%] md:w-1/2 lg:text-lg font-medium">
+            <p className="mt-4 w-[80%] md:w-1/2 lg:text-lg font-medium text-justify">
               {t("soho.add.vision.l1")}
             </p>
-            <p className="mt-4 w-[80%] md:w-1/2 lg:text-lg font-medium">
+            <p className="mt-4 w-[80%] md:w-1/2 lg:text-lg font-medium text-justify">
               {t("soho.add.vision.l2")}
             </p>
           </div>
