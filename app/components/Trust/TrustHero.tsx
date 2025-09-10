@@ -3,7 +3,8 @@ import Header from "../Header";
 
 function TrustHero() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <>
+    {/* <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 -z-20">
         <Image
           src="/home/hero-trust.png"
@@ -17,7 +18,21 @@ function TrustHero() {
       <div className="absolute inset-0 w-full h-full text-primary">
         <Header />
       </div>
+    </section> */}
+    <div className="absolute inset-0 w-full h-full text-primary">
+        <Header />
+    </div>
+    <section className="relative w-full h-[80vh] overflow-hidden">
+            <Image
+              src="/home/hero-trust.png"
+              alt="Trust Hero"
+              width={1920}
+              height={1080}
+              className="w-full h-full object-cover"
+              priority
+            />
     </section>
+    </>
   );
 }
 

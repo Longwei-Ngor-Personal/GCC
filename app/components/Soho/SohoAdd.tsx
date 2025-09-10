@@ -2,12 +2,16 @@
 
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import Header from "../Header";
 
 function SohoAdd() {
   const { t } = useTranslation();
 
   return (
     <>
+      <div className="absolute inset-0 w-full h-full text-primary">
+        <Header />
+      </div>
       {/* HERO (image only) */}
       <section className="relative w-full h-[80vh] overflow-hidden">
         <Image

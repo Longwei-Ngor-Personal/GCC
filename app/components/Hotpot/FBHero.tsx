@@ -10,8 +10,9 @@ function FBHero() {
 
   return (
     <>
-      <Header />
-
+      <div className="absolute inset-0 w-full h-full text-primary">
+        <Header />
+      </div>
       {/* Hero */}
       <section className="relative w-full h-[80vh] overflow-hidden">
         <Image

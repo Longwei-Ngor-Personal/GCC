@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import FundAbout from "../components/Fund/FundAbout";
 import FundBackground from "../components/Fund/FundBackground";
 import FundHero from "../components/Fund/FundHero";
@@ -13,6 +14,7 @@ import TrustWhy from "../components/Trust/TrustWhy";
 function GCTrustPage() {
   return (
     <>
+      <Header />
       <TrustHero />
       <TrustAbout />
       <TrustBackground />
